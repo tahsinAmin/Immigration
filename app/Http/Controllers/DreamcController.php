@@ -28,9 +28,19 @@ class DreamcController extends Controller{
     }
 
     public function store(){
-        error_log(request('name'));
-        error_log(request('email'));
-        error_log(request('age'));
-        return redirect("/");
+        // error_log(request('name'));
+        // error_log(request('email'));
+        // error_log(request('age'));
+
+        $dc = new Dreamc();
+        $dc->name = request('name');
+        $dc->email = request('email');
+        $dc->age = request('age');
+
+        // error_log($pizza);
+        $dc->save();
+
+        // return redirect("/");
+        return redirect("/dreamc/create")->with('mssg', 'Assessment form submitted!!');
     }
 }

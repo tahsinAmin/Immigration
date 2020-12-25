@@ -2,6 +2,8 @@
 
 @section('content')
 <div class="wrapper create-dream">
+
+<h4 class="mssg success">{{ session('mssg') }}</h4>
 <form action="/dreamc" method="POST">
   @csrf
     <legend>Form Assessment</legend>
