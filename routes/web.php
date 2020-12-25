@@ -17,21 +17,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('blog');
 });
 
 Route::get('/pricing', function () {
     return view('pricing');
 });
 
-Route::get('/blog', function () {
-    return view('blog');
-});
+// Route::get('/blog', function () {
+//     return view('blog');
+// });
 
 Route::get("send-email", [EmailController::class, "sendEmail"]);
-Route::get("payment", [EmailController::class, "payment"]);
+// Route::get("payment", [EmailController::class, "payment"]);
 Route::get('/assess', function () {
     return view('assess');
 });
 
 Route::get('dreamc',[DreamcController::class, 'index']);
+Route::get('dreamc/create',[DreamcController::class, 'create']);
+Route::post('dreamc',[DreamcController::class, 'store']);
+Route::get('dreamc/{id}',[DreamcController::class, 'show']);
