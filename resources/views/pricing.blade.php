@@ -86,9 +86,9 @@
             </div>
         </div>
         <hr class="mb-4">
-        <a href="{{ url('/payment') }}" class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</a>
+        <!-- <a href="{{ url('/payment') }}" class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</a> -->
 
-        <!-- <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button> -->
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
         <hr>
     </form>
 

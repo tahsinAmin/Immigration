@@ -12,11 +12,6 @@ use PayPalCheckoutSdk\Orders\OrdersCreateRequest;
 
 
 class EmailController extends Controller{
-    public function sendEmail() {
-        $to_email = "muhammadtahsinamin@gmail.com";
-        Mail::to($to_email)->send(new FirstEmail);
-        return "<p> Success! Your E-mail has been sent.</p>";
-    }
     public function payment(){
         // echo "Payment done?";
         $clientId = "AbobDk25HEfyVNSFDpVwUM4bn-AXRPwm0hqO9HqiDEb_6pIGqT8o1KZgwPsaWSw__SJRG8RjbzvqRa8M";

@@ -33,9 +33,14 @@
     <!-- <link href="blog.css" rel="stylesheet"> -->
     <link href="/css/main.css" rel="stylesheet">
 
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;family=Yellowtail&amp;display=swap" rel="stylesheet">
+
     <!-- fontawesome cdn -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/1b49d7e787.js"></script>
+
+
 </head>
     <body>
         @yield('content')

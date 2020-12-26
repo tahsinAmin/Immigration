@@ -85,3 +85,12 @@ footer{
   padding: 12px 0;
   color: #5e2195;
 }
+
+.backImg{
+  background-image: url("/img/night.jpg");
+  background-position: top;
+  background-size: cover;
+  /* background-image: url("cloudy.jpg"); */
+  /* background-color: #cccccc; */
+  /* <img src="/img/pizza-house.png" alt="pizza house logo"> */
+}
