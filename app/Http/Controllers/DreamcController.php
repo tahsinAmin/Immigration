@@ -13,9 +13,6 @@ class DreamcController extends Controller{
 
     public function index(){
         $dreamc = Dreamc::all();
-        // $dreamc = Dreamc::orderBy('name','desc')->get();
-        // $dreamc = Dreamc::where('age',34)->get();
-        // $dreamc = Dreamc::latest()->get();
 
         return view('dreamc.index', [
             'dreamc' => $dreamc,
@@ -32,16 +29,18 @@ class DreamcController extends Controller{
     }
 
     public function store(){
-        // error_log(request('name'));
-        // error_log(request('email'));
-        // error_log(request('age'));
 
         $dc = new Dreamc();
         $dc->name = request('name');
         $dc->email = request('email');
         $dc->age = request('age');
 
-        Mail::to(request('email'))->send(new FirstEmail);
+        $email_data = array(
+            'name' => request('name'),
+            'age' => request('age')
+        );
+
+        Mail::to(request('email'))->send(new FirstEmail($email_data));
 
         // error_log($pizza);
         $dc->save();

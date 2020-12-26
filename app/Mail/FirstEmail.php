@@ -16,9 +16,11 @@ class FirstEmail extends Mailable
      *
      * @return void
      */
-    public function __construct()
+    public $emails;
+
+    public function __construct($emails)
     {
-        //
+        $this->emails = $emails;
     }
 
     /**
@@ -30,6 +32,10 @@ class FirstEmail extends Mailable
     {
         // return $this->view('view.name');
         // return $this->from("admin@programmingfields.com")->view('email-template');
-        return $this->from("amin1996bangladesh@gmail.com")->view('email-template');
+        return $this->from("amin1996bangladesh@gmail.com")->view('email-template')->with('emails', $this->emails);
+
+        // return $this->subject('Message from DreamC')
+        //             ->view('email_template')
+        //             ->with('emails', $this->emails);
     }
 }
