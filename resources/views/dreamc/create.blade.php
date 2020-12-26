@@ -4,7 +4,7 @@
 <div class="wrapper create-dream">
 
 <h4 class="mssg success">{{ session('mssg') }}</h4>
-<form action="/dreamc" method="POST">
+<form action="{{ route('dreamc.index') }}" method="POST">
   @csrf
     <legend>Form Assessment</legend>
     <div class="form-group">

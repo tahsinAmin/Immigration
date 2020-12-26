@@ -23,7 +23,8 @@
             DreamcC
         </div>
         <p class="mssg">{{ session('mssg') }}</p>
-        <a href="/dreamc/create">Submit Form</a>
+        <a href="{{ route('dreamc.create') }}">Submit Form</a>
+        
     </div>
 </div>
 @endsection

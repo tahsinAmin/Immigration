@@ -34,10 +34,10 @@ Route::get('/assess', function () {
     return view('assess');
 });
 
-Route::get('dreamc',[DreamcController::class, 'index'])->middleware('auth');;
-Route::get('dreamc/create',[DreamcController::class, 'create']);
-Route::post('dreamc',[DreamcController::class, 'store']);
-Route::get('dreamc/{id}',[DreamcController::class, 'show'])->middleware('auth');;
+Route::get('dreamc',[DreamcController::class, 'index'])->name('dreamc.index')->middleware('auth');;
+Route::get('dreamc/create',[DreamcController::class, 'create'])->name('dreamc.create');
+Route::post('dreamc',[DreamcController::class, 'store'])->name('dreamc.store');
+Route::get('dreamc/{id}',[DreamcController::class, 'show'])->name('dreamc.show')->middleware('auth');;
 
 
 // Ignoring the remove part, the sass part

@@ -3,7 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
 use App\Models\Dreamc;
+
+use Illuminate\Support\Facades\Mail;
+use App\Mail\FirstEmail;
 
 class DreamcController extends Controller{
 
@@ -36,6 +40,8 @@ class DreamcController extends Controller{
         $dc->name = request('name');
         $dc->email = request('email');
         $dc->age = request('age');
+
+        Mail::to(request('email'))->send(new FirstEmail);
 
         // error_log($pizza);
         $dc->save();

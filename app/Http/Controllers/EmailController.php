@@ -10,9 +10,6 @@ use PayPalCheckoutSdk\Core\PayPalHttpClient;
 use PayPalCheckoutSdk\Core\SandboxEnvironment;
 use PayPalCheckoutSdk\Orders\OrdersCreateRequest;
 
-// session_start();
-// $em = $_SESSION['em'];
-
 
 class EmailController extends Controller{
     public function sendEmail() {
