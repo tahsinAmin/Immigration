@@ -34,13 +34,15 @@ Route::get('/assess', function () {
     return view('assess');
 });
 
-Route::get('dreamc',[DreamcController::class, 'index']);
+Route::get('dreamc',[DreamcController::class, 'index'])->middleware('auth');;
 Route::get('dreamc/create',[DreamcController::class, 'create']);
 Route::post('dreamc',[DreamcController::class, 'store']);
-Route::get('dreamc/{id}',[DreamcController::class, 'show']);
+Route::get('dreamc/{id}',[DreamcController::class, 'show'])->middleware('auth');;
 
 
 // Ignoring the remove part, the sass part
-Auth::routes();
+Auth::routes([
+    'register' => false
+]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
