@@ -30,7 +30,7 @@
     <!-- Custom styles for this template -->
     <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="blog.css" rel="stylesheet">
+    <!-- <link href="blog.css" rel="stylesheet"> -->
     <link href="/css/main.css" rel="stylesheet">
 
     <!-- fontawesome cdn -->
