@@ -11,6 +11,8 @@ use App\Mail\FirstEmail;
 
 class DreamcController extends Controller{
 
+
+
     public function index(){
         $dreamc = Dreamc::all();
 
@@ -29,15 +31,26 @@ class DreamcController extends Controller{
     }
 
     public function store(){
+        $age = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
         $dc = new Dreamc();
         $dc->name = request('name');
         $dc->email = request('email');
         $dc->age = request('age');
 
+        $value = request('age');
+        $age=0;
+        if($value<18 || $value >=47){
+        }else if(valu>= 18 && $value<36){
+            $age=12;
+        }else{
+            $age=(12 - ($value-35));
+        }       
+
+
         $email_data = array(
             'name' => request('name'),
-            'age' => request('age')
+            'age' => $age
         );
 
         Mail::to(request('email'))->send(new FirstEmail($email_data));

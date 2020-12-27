@@ -58,7 +58,7 @@
   </tr>
   <tr>
     <td><b>Age</b></td>
-    <td>20</td>
+    <td>12</td>
     <td>{{ $emails['age'] }}</td>
   </tr>
   <tr>
@@ -73,7 +73,7 @@
   </tr>
 </table>
 
-@if ($emails['age'] > 20)
+@if ($emails['age'] >=12)
   <p>You are eligible.</p>
 @else
   <p>You are not eligible.</p>
