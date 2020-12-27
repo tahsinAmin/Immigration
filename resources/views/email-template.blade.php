@@ -38,7 +38,7 @@
 <table id="t01">
   <tr>
     <th>Six selection factors</th>
-    <th>Points Require</th> 
+    <th>Minimum Points</th> 
     <th>Points Scored</th>
   </tr>
   <tr>
@@ -49,7 +49,7 @@
   <tr>
     <td><b>Education</b></td>
     <td>50</td>
-    <td>94</td>
+    <td>80</td>
   </tr>
   <tr>
     <td><b>Work experience</b></td>
@@ -58,7 +58,7 @@
   </tr>
   <tr>
     <td><b>Age</b></td>
-    <td>50</td>
+    <td>20</td>
     <td>{{ $emails['age'] }}</td>
   </tr>
   <tr>
