@@ -46,6 +46,6 @@ class DreamcController extends Controller{
         $dc->save();
 
         // return redirect("/");
-        return redirect("/dreamc/create")->with('mssg', 'Assessment form submitted!!');
+        return redirect("/dreamc/create")->with('success', 'Assessment form submitted!!');
     }
 }

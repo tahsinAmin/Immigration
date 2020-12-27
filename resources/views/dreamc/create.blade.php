@@ -3,7 +3,26 @@
 @section('content')
 <div class="wrapper create-dream">
 
-<h4 class="mssg success">{{ session('mssg') }}</h4>
+<!-- <h4 class="mssg success">{{ session('mssg') }}</h4> -->
+<div class="container" style="width:65%">
+@if (count($errors) > 0)
+    <div class="alert alert-danger">
+        <button type="button" class="close" data-dismiss="alert">×</button>
+        <ul>
+        @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+        @endforeach
+        </ul>
+    </div>
+@endif
+@if ($message = Session::get('success'))
+    <div class="alert alert-success alert-block">
+        <button type="button" class="close" data-dismiss="alert">×</button>
+        <strong>{{ $message }}</strong>
+    </div>
+@endif
+</div>
+
 <form action="{{ route('dreamc.index') }}" method="POST">
   @csrf
     <legend>Form Assessment</legend>
