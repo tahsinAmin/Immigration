@@ -31,7 +31,7 @@ class DreamcController extends Controller{
     }
 
     public function store(){
-        $age = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+        $age = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,11,10,9,8,7,6,5,4,3,2,1];
 
         $dc = new Dreamc();
         $dc->name = request('name');
@@ -39,18 +39,15 @@ class DreamcController extends Controller{
         $dc->age = request('age');
 
         $value = request('age');
-        $age=0;
-        if($value<18 || $value >=47){
-        }else if(valu>= 18 && $value<36){
-            $age=12;
-        }else{
-            $age=(12 - ($value-35));
+        $a=0;
+        if( $value < 47){
+            $a=$age[$value];
         }       
 
 
         $email_data = array(
             'name' => request('name'),
-            'age' => $age
+            'age' => $a
         );
 
         Mail::to(request('email'))->send(new FirstEmail($email_data));
