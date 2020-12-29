@@ -31,7 +31,8 @@ class DreamcController extends Controller{
     }
 
     public function store(){
-        $age = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,11,10,9,8,7,6,5,4,3,2,1];
+        $age = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+        12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,11,10,9,8,7,6,5,4,3,2,1];
 
         $dc = new Dreamc();
         $dc->name = request('name');
@@ -39,11 +40,7 @@ class DreamcController extends Controller{
         $dc->age = request('age');
 
         $value = request('age');
-        $a=0;
-        if( $value < 47){
-            $a=$age[$value];
-        }       
-
+        $a= ($value < 47)? $age[$value] :0; 
 
         $email_data = array(
             'name' => request('name'),
