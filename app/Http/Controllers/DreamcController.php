@@ -38,13 +38,15 @@ class DreamcController extends Controller{
         $dc->name = request('name');
         $dc->email = request('email');
         $dc->age = request('age');
+        $dc->workexp = request('workexp');
 
         $value = request('age');
         $a= ($value < 47)? $age[$value] :0; 
 
         $email_data = array(
             'name' => request('name'),
-            'age' => $a
+            'age' => $a,
+            'workexp' => request('workexp'),
         );
 
         Mail::to(request('email'))->send(new FirstEmail($email_data));

@@ -19,6 +19,7 @@ class CreateDreamcTable extends Migration
             $table->string('email');
             $table->string('name');
             $table->integer('age');
+            $table->integer('workexp');
         });
     }
 
