@@ -8,6 +8,7 @@
  curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 
  $result = curl_exec($curl);
+ 
 
  $sections = array();
 
