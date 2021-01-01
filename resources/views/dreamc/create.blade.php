@@ -61,7 +61,7 @@
           </div>                
       </div>
 
-      <!-- <hr class="my-4">
+      <hr class="my-4">
       <h4>Education</h4>
       <div class="row g-3">
         <div class="col-md-3">
@@ -91,8 +91,8 @@
             </div>
 
             <div class="col-md-3">
-            <label for="speaking" class="form-label">Speaking</label>
-              <select class="form-select" id="speaking" name="speaking" required>
+            <label for="listening" class="form-label">Listening</label>
+              <select class="form-select" id="listening" name="listening" required>
                 <option value="">Choose...</option>
                 <option value=9 >9</option>
                 <option value=8.5 >8.5</option>
@@ -117,8 +117,8 @@
             </div> 
 
             <div class="col-md-3">
-            <label for="speaking" class="form-label">Speaking</label>
-              <select class="form-select" id="speaking" name="speaking" required>
+            <label for="reading" class="form-label">Reading</label>
+              <select class="form-select" id="reading" name="reading" required>
                 <option value="">Choose...</option>
                 <option value=9 >9</option>
                 <option value=8.5 >8.5</option>
@@ -143,8 +143,8 @@
             </div>
 
             <div class="col-md-3">
-            <label for="speaking" class="form-label">Speaking</label>
-              <select class="form-select" id="speaking" name="speaking" required>
+            <label for="writing" class="form-label">Writing</label>
+              <select class="form-select" id="writing" name="writing" required>
                 <option value="">Choose...</option>
                 <option value=9 >9</option>
                 <option value=8.5 >8.5</option>
@@ -169,7 +169,7 @@
             </div>
           </div>
 
-          <hr class="my-4"> -->
+          <hr class="my-4">
 
 
 

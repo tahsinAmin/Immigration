@@ -51,7 +51,10 @@ class DreamcController extends Controller{
 
         Mail::to(request('email'))->send(new FirstEmail($email_data));
 
-        // error_log($pizza);
+        error_log(request('speaking'));
+        error_log(request('listening'));
+        error_log(request('reading'));
+        error_log(request('writing'));
         $dc->save();
 
         // return redirect("/");
