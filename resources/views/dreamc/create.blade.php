@@ -82,8 +82,7 @@
                 <option value=3.5 >3.5</option>
                 <option value=3 >3</option>
                 <option value=2.5 >2.5</option>
-                <option value=2 >2</option>
-                <option value=8.5 >8.5</option>              
+                <option value=2 >2</option>           
               </select>
               <div class="invalid-feedback">
                 Please select a valid score.
@@ -108,8 +107,7 @@
                 <option value=3.5 >3.5</option>
                 <option value=3 >3</option>
                 <option value=2.5 >2.5</option>
-                <option value=2 >2</option>
-                <option value=8.5 >8.5</option>              
+                <option value=2 >2</option>          
               </select>
               <div class="invalid-feedback">
                 Please select a valid country.
@@ -134,8 +132,7 @@
                 <option value=3.5 >3.5</option>
                 <option value=3 >3</option>
                 <option value=2.5 >2.5</option>
-                <option value=2 >2</option>
-                <option value=8.5 >8.5</option>              
+                <option value=2 >2</option>         
               </select>
               <div class="invalid-feedback">
                 Please provide a valid state.
@@ -160,8 +157,7 @@
                 <option value=3.5 >3.5</option>
                 <option value=3 >3</option>
                 <option value=2.5 >2.5</option>
-                <option value=2 >2</option>
-                <option value=8.5 >8.5</option>              
+                <option value=2 >2</option>        
               </select>
               <div class="invalid-feedback">
                 Zip code required.
