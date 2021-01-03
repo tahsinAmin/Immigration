@@ -31,43 +31,48 @@
 </head>
 <body>
 
-<h2>Styling Tables</h2>
+<h2>DreamC</h2>
 
 <table id="t01">
   <tr>
-    <th>Six selection factors</th>
-    <th>Minimum Points</th> 
-    <th>Points Scored</th>
-  </tr>
-  <tr>
-    <td><b>Language skills</b></td>
-    <td>50</td>
-    <td>50</td>
+      <th>Selection Factors</th>
+      <th>Maximum Points</th> 
+      <th>Your Score</th>
   </tr>
   <tr>
     <td><b>Education</b></td>
+      <td>25</td>
+      <td>80</td>
+  </tr>
+  <tr>
+    <td><b>Language skills</b></td>
+    <td>28</td>
     <td>50</td>
-    <td>80</td>
   </tr>
   <tr>
-    <td><b>Work experience</b></td>
-    <td>9</td>
-    <td>{{ $emails['workexp'] }}</td>
+      <td><b>Experience</b></td>
+      <td>15</td>
+      <td>{{ $emails['workexp'] }}</td>
   </tr>
   <tr>
-    <td><b>Age</b></td>
-    <td>12</td>
-    <td>{{ $emails['age'] }}</td>
+      <td><b>Age</b></td>
+      <td>12</td>
+      <td>{{ $emails['age'] }}</td>
   </tr>
   <tr>
-    <td><b>Arranged employment in Canada</b></td>
-    <td>50</td>
-    <td>80</td>
+      <td><b>Job in Canada</b></td>
+      <td>10</td>
+      <td>80</td>
   </tr>
   <tr>
-    <td><b>Adaptability</b></td>
-    <td>50</td>
-    <td>80</td>
+      <td><b>Adaptability</b></td>
+      <td>10</td>
+      <td>80</td>
+  </tr>
+  <tr>
+    <td><b>Total</b></td>
+    <td>100</td>
+    <td>{{ $emails['total'] }}</td>
   </tr>
 </table>
 
