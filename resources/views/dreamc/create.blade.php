@@ -38,7 +38,7 @@
       </div>
 
       <div class="form-group mt-4">
-          <h5>Work Experience</h5>
+          <h4>Work Experience</h4>
           <div class="form-check">
             <input id="zero" name="workexp" type="radio" class="form-check-input" value=0 checked required>
             <label class="form-check-label" for="zero">None</label>
@@ -62,110 +62,190 @@
       </div>
 
       <hr class="my-4">
-      <h4>Education</h4>
+      <h4>Language</h4>
+      <h5>First Official Language</h5>
       <div class="row g-3">
         <div class="col-md-3">
-          <label for="speaking" class="form-label">Speaking</label>
-              <select class="form-select" id="speaking" name="speaking" required>
-                <option value="">Choose...</option>
-                <option value=9 >9</option>
-                <option value=8.5 >8.5</option>
-                <option value=8 >8</option>
-                <option value=7.5 >7.5</option>
-                <option value=7 >7</option>
-                <option value=6.5 >6.5</option>
-                <option value=6 >6</option>
-                <option value=5.5 >5.5</option>
-                <option value=5 >5</option>
-                <option value=4.5 >4.5</option>
-                <option value=4 >4</option>
-                <option value=3.5 >3.5</option>
-                <option value=3 >3</option>
-                <option value=2.5 >2.5</option>
-                <option value=2 >2</option>           
-              </select>
-              <div class="invalid-feedback">
-                Please select a valid score.
-              </div>
-            </div>
+          <label for="speaking1" class="form-label">Speaking</label>
+          <select class="form-select" id="speaking1" name="speaking1" required>
+            <option value="">Choose...</option>
+            <option value=9 >9</option>
+            <option value=8.5 >8.5</option>
+            <option value=8 >8</option>
+            <option value=7.5 >7.5</option>
+            <option value=7 >7</option>
+            <option value=6.5 >6.5</option>
+            <option value=6 >6</option>
+            <option value=5.5 >5.5</option>
+            <option value=5 >5</option>
+            <option value=4.5 >4.5</option>
+            <option value=4 >4</option>
+            <option value=3.5 >3.5</option>
+            <option value=3 >3</option>
+            <option value=2.5 >2.5</option>
+            <option value=2 >2</option>           
+          </select>
+        </div>
 
-            <div class="col-md-3">
-            <label for="listening" class="form-label">Listening</label>
-              <select class="form-select" id="listening" name="listening" required>
-                <option value="">Choose...</option>
-                <option value=9 >9</option>
-                <option value=8.5 >8.5</option>
-                <option value=8 >8</option>
-                <option value=7.5 >7.5</option>
-                <option value=7 >7</option>
-                <option value=6.5 >6.5</option>
-                <option value=6 >6</option>
-                <option value=5.5 >5.5</option>
-                <option value=5 >5</option>
-                <option value=4.5 >4.5</option>
-                <option value=4 >4</option>
-                <option value=3.5 >3.5</option>
-                <option value=3 >3</option>
-                <option value=2.5 >2.5</option>
-                <option value=2 >2</option>          
-              </select>
-              <div class="invalid-feedback">
-                Please select a valid country.
-              </div>
-            </div> 
+        <div class="col-md-3">
+          <label for="listening1" class="form-label">Listening</label>
+            <select class="form-select" id="listening1" name="listening1" required>
+            <option value="">Choose...</option>
+            <option value=9 >9</option>
+            <option value=8.5 >8.5</option>
+            <option value=8 >8</option>
+            <option value=7.5 >7.5</option>
+            <option value=7 >7</option>
+            <option value=6.5 >6.5</option>
+            <option value=6 >6</option>
+            <option value=5.5 >5.5</option>
+            <option value=5 >5</option>
+            <option value=4.5 >4.5</option>
+            <option value=4 >4</option>
+            <option value=3.5 >3.5</option>
+            <option value=3 >3</option>
+            <option value=2.5 >2.5</option>
+            <option value=2 >2</option>           
+          </select>
+        </div> 
 
-            <div class="col-md-3">
-            <label for="reading" class="form-label">Reading</label>
-              <select class="form-select" id="reading" name="reading" required>
-                <option value="">Choose...</option>
-                <option value=9 >9</option>
-                <option value=8.5 >8.5</option>
-                <option value=8 >8</option>
-                <option value=7.5 >7.5</option>
-                <option value=7 >7</option>
-                <option value=6.5 >6.5</option>
-                <option value=6 >6</option>
-                <option value=5.5 >5.5</option>
-                <option value=5 >5</option>
-                <option value=4.5 >4.5</option>
-                <option value=4 >4</option>
-                <option value=3.5 >3.5</option>
-                <option value=3 >3</option>
-                <option value=2.5 >2.5</option>
-                <option value=2 >2</option>         
-              </select>
-              <div class="invalid-feedback">
-                Please provide a valid state.
-              </div>
-            </div>
+        <div class="col-md-3">
+          <label for="reading1" class="form-label">Reading</label>
+          <select class="form-select" id="reading1" name="reading1" required>
+            <option value="">Choose...</option>
+            <option value=9 >9</option>
+            <option value=8.5 >8.5</option>
+            <option value=8 >8</option>
+            <option value=7.5 >7.5</option>
+            <option value=7 >7</option>
+            <option value=6.5 >6.5</option>
+            <option value=6 >6</option>
+            <option value=5.5 >5.5</option>
+            <option value=5 >5</option>
+            <option value=4.5 >4.5</option>
+            <option value=4 >4</option>
+            <option value=3.5 >3.5</option>
+            <option value=3 >3</option>
+            <option value=2.5 >2.5</option>
+            <option value=2 >2</option>           
+          </select>
+        </div>
 
-            <div class="col-md-3">
-            <label for="writing" class="form-label">Writing</label>
-              <select class="form-select" id="writing" name="writing" required>
-                <option value="">Choose...</option>
-                <option value=9 >9</option>
-                <option value=8.5 >8.5</option>
-                <option value=8 >8</option>
-                <option value=7.5 >7.5</option>
-                <option value=7 >7</option>
-                <option value=6.5 >6.5</option>
-                <option value=6 >6</option>
-                <option value=5.5 >5.5</option>
-                <option value=5 >5</option>
-                <option value=4.5 >4.5</option>
-                <option value=4 >4</option>
-                <option value=3.5 >3.5</option>
-                <option value=3 >3</option>
-                <option value=2.5 >2.5</option>
-                <option value=2 >2</option>        
-              </select>
-              <div class="invalid-feedback">
-                Zip code required.
-              </div>
-            </div>
-          </div>
+        <div class="col-md-3">
+          <label for="writing1" class="form-label">Writing</label>
+          <select class="form-select" id="writing1" name="writing1" required>
+          <option value="">Choose...</option>
+            <option value=9 >9</option>
+            <option value=8.5 >8.5</option>
+            <option value=8 >8</option>
+            <option value=7.5 >7.5</option>
+            <option value=7 >7</option>
+            <option value=6.5 >6.5</option>
+            <option value=6 >6</option>
+            <option value=5.5 >5.5</option>
+            <option value=5 >5</option>
+            <option value=4.5 >4.5</option>
+            <option value=4 >4</option>
+            <option value=3.5 >3.5</option>
+            <option value=3 >3</option>
+            <option value=2.5 >2.5</option>
+            <option value=2 >2</option>           
+          </select>
+        </div>
+      </div>
 
-          <hr class="my-4">
+      <h5>Second Official Language</h5>
+      <div class="row g-3">
+        <div class="col-md-3">
+          <label for="speaking2" class="form-label">Speaking</label>
+          <select class="form-select" id="speaking2" name="speaking2" required>
+            <option value="">Choose...</option>
+            <option value=9 >9</option>
+            <option value=8.5 >8.5</option>
+            <option value=8 >8</option>
+            <option value=7.5 >7.5</option>
+            <option value=7 >7</option>
+            <option value=6.5 >6.5</option>
+            <option value=6 >6</option>
+            <option value=5.5 >5.5</option>
+            <option value=5 >5</option>
+            <option value=4.5 >4.5</option>
+            <option value=4 >4</option>
+            <option value=3.5 >3.5</option>
+            <option value=3 >3</option>
+            <option value=2.5 >2.5</option>
+            <option value=2 >2</option>           
+          </select>
+        </div>
+
+        <div class="col-md-3">
+          <label for="listening2" class="form-label">Listening</label>
+            <select class="form-select" id="listening2" name="listening2" required>
+            <option value="">Choose...</option>
+            <option value=9 >9</option>
+            <option value=8.5 >8.5</option>
+            <option value=8 >8</option>
+            <option value=7.5 >7.5</option>
+            <option value=7 >7</option>
+            <option value=6.5 >6.5</option>
+            <option value=6 >6</option>
+            <option value=5.5 >5.5</option>
+            <option value=5 >5</option>
+            <option value=4.5 >4.5</option>
+            <option value=4 >4</option>
+            <option value=3.5 >3.5</option>
+            <option value=3 >3</option>
+            <option value=2.5 >2.5</option>
+            <option value=2 >2</option>           
+          </select>
+        </div> 
+
+        <div class="col-md-3">
+          <label for="reading2" class="form-label">Reading</label>
+          <select class="form-select" id="reading2" name="reading2" required>
+            <option value="">Choose...</option>
+            <option value=9 >9</option>
+            <option value=8.5 >8.5</option>
+            <option value=8 >8</option>
+            <option value=7.5 >7.5</option>
+            <option value=7 >7</option>
+            <option value=6.5 >6.5</option>
+            <option value=6 >6</option>
+            <option value=5.5 >5.5</option>
+            <option value=5 >5</option>
+            <option value=4.5 >4.5</option>
+            <option value=4 >4</option>
+            <option value=3.5 >3.5</option>
+            <option value=3 >3</option>
+            <option value=2.5 >2.5</option>
+            <option value=2 >2</option>           
+          </select>
+        </div>
+
+        <div class="col-md-3">
+          <label for="writing2" class="form-label">Writing</label>
+          <select class="form-select" id="writing2" name="writing2" required>
+          <option value="">Choose...</option>
+            <option value=9 >9</option>
+            <option value=8.5 >8.5</option>
+            <option value=8 >8</option>
+            <option value=7.5 >7.5</option>
+            <option value=7 >7</option>
+            <option value=6.5 >6.5</option>
+            <option value=6 >6</option>
+            <option value=5.5 >5.5</option>
+            <option value=5 >5</option>
+            <option value=4.5 >4.5</option>
+            <option value=4 >4</option>
+            <option value=3.5 >3.5</option>
+            <option value=3 >3</option>
+            <option value=2.5 >2.5</option>
+            <option value=2 >2</option>           
+          </select>
+        </div>
+      </div>
+
+      <hr class="my-4">
 
 
 

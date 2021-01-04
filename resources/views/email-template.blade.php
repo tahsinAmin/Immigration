@@ -47,7 +47,7 @@
   <tr>
     <td><b>Language skills</b></td>
     <td>28</td>
-    <td>50</td>
+    <td>{{ $emails['clb'] }}</td>
   </tr>
   <tr>
       <td><b>Experience</b></td>
@@ -76,7 +76,7 @@
   </tr>
 </table>
 
-@if ($emails['age'] >=12 && $emails['workexp'] > 0)
+@if ($emails['total'] >=67)
   <p>You are eligible.</p>
 @else
   <p>You are not eligible.</p>

@@ -43,36 +43,59 @@ class DreamcController extends Controller{
         $value = request('age');
         $a= ($value < 47)? $age[$value] :0; 
 
-        $total = $a + request('workexp');
+        $speaking = request('speaking1');
+        $listening = request('listening1');
+        $reading = request('reading1');
+        $writing = request('writing1');
+        $clb = 0;
+
+        if($speaking>=7.0 &&  $listening>=8.0 && $reading>=7.0 && $writing>=7.0){
+            $clb = 24;
+        } else if($speaking>=6.5 &&  $listening>=7.5 && $reading>=6.5 && $writing>=6.5){
+            $clb = 20;
+        } else if($speaking>=6.0 &&  $listening>=6.0 && $reading>=6.0 && $writing>=6.0){
+            $clb = 16;
+        } else if($speaking>=5.5 &&  $listening>=5.5 && $reading>=5.0 && $writing>=5.5){
+
+        } else if($speaking>=5.0 &&  $listening>=5.0 && $reading>=4.0 && $writing>=5.0){
+
+        } else{
+            error_log("Not eligible to apply");
+        }
+
+        $speaking = request('speaking2');
+        $listening = request('listening2');
+        $reading = request('reading2');
+        $writing = request('writing2');
+        $clb2 = 4;
+        if($speaking>=7.0 &&  $listening>=8.0 && $reading>=7.0 && $writing>=7.0){
+
+        } else if($speaking>=6.5 &&  $listening>=7.5 && $reading>=6.5 && $writing>=6.5){
+
+        } else if($speaking>=6.0 &&  $listening>=6.0 && $reading>=6.0 && $writing>=6.0){
+
+        } else if($speaking>=5.5 &&  $listening>=5.5 && $reading>=5.0 && $writing>=5.5){
+
+        } else if($speaking>=5.0 &&  $listening>=5.0 && $reading>=4.0 && $writing>=5.0){
+            
+        } else{
+            $clb2 = 0;
+        }
+
+        $clb+=$clb2;
+
+        $total = $a + $clb + request('workexp');
 
         $email_data = array(
             'name' => request('name'),
             'age' => $a,
             'workexp' => request('workexp'),
+            'clb' => $clb,
             'total' => $total
         );
 
         Mail::to(request('email'))->send(new FirstEmail($email_data));
-
-        error_log(request('speaking'));
-        error_log(request('listening'));
-        error_log(request('reading'));
-        error_log(request('writing'));
-
-        $speaking = request('speaking');
-        $listening = request('listening');
-        $reading = request('reading');
-        $writing = request('writing');
-
-        if($speaking>=7.0 &&  $listening>=8.0 && $reading>=7.0 && $writing>=7.0){
-            error_log("CLB9 or above.");
-        } else if($speaking>=6.5 &&  $listening>=7.5 && $reading>=6.5 && $writing>=6.5){
-            error_log("CLB8.");
-        } else if($speaking>=6.0 &&  $listening>=6.0 && $reading>=6.0 && $writing>=6.0){
-            error_log("CLB7.");
-        }else{
-            error_log("Not eligible to apply");
-        }
+        
         $dc->save();
 
         // return redirect("/");
