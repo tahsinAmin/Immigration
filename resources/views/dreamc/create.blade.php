@@ -61,6 +61,39 @@
           </div>                
       </div>
 
+      <div class="form-group mt-4">
+          <h4>Education</h4>
+          <div class="form-check">
+            <input id="phd" name="education" type="radio" class="form-check-input" value=25 required>
+            <label class="form-check-label" for="phd">PhD</label>
+          </div>
+          <div class="form-check">
+            <input id="master" name="education" type="radio" class="form-check-input" value=23 required>
+            <label class="form-check-label" for="master">Master</label>
+          </div>
+          <div class="form-check">
+            <input id="twoormore" name="education" type="radio" class="form-check-input" value=22 required>
+            <label class="form-check-label" for="twoormore">Two Or More</label>
+          </div>
+          <div class="form-check">
+            <input id="ps3p" name="education" type="radio" class="form-check-input" value=21 required>
+            <label class="form-check-label" for="ps3p">Post Secondary/ 3+yr prog</label>
+          </div> 
+          <div class="form-check">
+            <input id="ps2" name="education" type="radio" class="form-check-input" value=19 required>
+            <label class="form-check-label" for="ps2">Post Secondary/ 2yr prog</label>
+          </div>
+          <div class="form-check">
+            <input id="ps1" name="education" type="radio" class="form-check-input" value=15 required>
+            <label class="form-check-label" for="ps1">Post Secondary/ 1yr prog</label>
+          </div>
+          <div class="form-check">
+            <input id="highschool" name="education" type="radio" class="form-check-input" value=5 required>
+            <label class="form-check-label" for="highschool">High School</label>
+          </div>            
+      </div>
+
+
       <hr class="my-4">
       <h4>Language</h4>
       <h5>First Official Language</h5>

@@ -42,7 +42,7 @@
   <tr>
     <td><b>Education</b></td>
       <td>25</td>
-      <td>80</td>
+      <td>{{ $emails['education'] }}</td>
   </tr>
   <tr>
     <td><b>Language skills</b></td>

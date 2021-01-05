@@ -84,12 +84,13 @@ class DreamcController extends Controller{
 
         $clb+=$clb2;
 
-        $total = $a + $clb + request('workexp');
+        $total = $a + $clb + request('workexp') + request('education');
 
         $email_data = array(
             'name' => request('name'),
             'age' => $a,
             'workexp' => request('workexp'),
+            'education' => request('education'),
             'clb' => $clb,
             'total' => $total
         );
