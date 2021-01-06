@@ -94,3 +94,26 @@ footer{
   /* background-color: #cccccc; */
   /* <img src="/img/pizza-house.png" alt="pizza house logo"> */
 }
+
+.blog-header-logo {
+  font-family: 'Yellowtail', cursive;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 320px) {
+  nav{
+    height: 45px;
+  }
+  .blog-header-logo {
+    font-size: 20px;
+  }
+  .free-btn a{
+    font-size: 20px;
+  }
+  .free-btn{
+    height: 25px;
+    font-size: 15px;
+  }
+
+}
