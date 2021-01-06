@@ -93,10 +93,16 @@
           </div>            
       </div>
 
-
       <hr class="my-4">
-      <h4>Language</h4>
-      <h5>First Official Language</h5>
+      <h3>Language</h3>
+      <h4>
+        First Official Language
+        <select class="form-select" id="firstlang" name="firstlang" required>
+            <option value="">Choose...</option>
+              <option value="eng">English</option>
+              <option value="fr">French</option>
+        </select>
+      </h4>
       <div class="row g-3">
         <div class="col-md-3">
           <label for="speaking1" class="form-label">Speaking</label>
@@ -187,7 +193,10 @@
         </div>
       </div>
 
-      <h5>Second Official Language</h5>
+      <h4 class="my-4">
+        Second Official Language
+        (<span id="langchange" name="seecondlang"></span>)
+      </h4>
       <div class="row g-3">
         <div class="col-md-3">
           <label for="speaking2" class="form-label">Speaking</label>

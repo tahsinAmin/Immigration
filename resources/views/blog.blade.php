@@ -206,7 +206,7 @@
         </div>
       </div>
 
-    </div><!-- /.row -->
-  </main><!-- /.container -->
+    </div>
+  </main>
 @endsection
 
