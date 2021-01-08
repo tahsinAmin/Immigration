@@ -90,9 +90,6 @@ footer{
   background-image: url("/img/night.jpg");
   background-position: top;
   background-size: cover;
-  /* background-image: url("cloudy.jpg"); */
-  /* background-color: #cccccc; */
-  /* <img src="/img/pizza-house.png" alt="pizza house logo"> */
 }
 
 .blog-header-logo {
@@ -103,17 +100,15 @@ footer{
 
 @media screen and (max-width: 320px) {
   nav{
-    height: 45px;
+    height: 55px;
   }
   .blog-header-logo {
     font-size: 20px;
   }
-  .free-btn a{
-    font-size: 20px;
-  }
-  .free-btn{
-    height: 25px;
+  .free-btn {
+    height: 49px;
     font-size: 15px;
+    padding: 0 6px;
   }
 
 }
