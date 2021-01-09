@@ -38,9 +38,7 @@
     <body>
         @yield('content')
 
-      <!-- <footer class="blog-footer text-center">
-        <p>Copyright 2020 Dreamc</p>
-      </footer> -->
+
 
 
      <!-- Option 1: Bootstrap Bundle with Popper -->

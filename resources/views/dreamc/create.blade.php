@@ -1,7 +1,47 @@
-@extends('layouts.app')
 
-@section('content')
-<div class="wrapper create-dream">
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.79.0">
+    <title>Blog Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <!-- <link href="blog.css" rel="stylesheet"> -->
+    <link href="/css/main.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;family=Yellowtail&amp;display=swap" rel="stylesheet">
+
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/1b49d7e787.js"></script>
+
+
+</head>
+    <body>
+
+    <div class="wrapper create-dream">
   <div class="container" style="width:65%">
     @if (count($errors) > 0)
         <div class="alert alert-danger">
@@ -21,7 +61,7 @@
     @endif
   </div>
 
-  <form action="{{ route('dreamc.index') }}" class="container" method="POST">
+  <form action="{{ route('dreamc.index') }}" class="container" name="myForm" method="POST">
     @csrf
       <legend>Form Assessment</legend>
       <div class="form-group">
@@ -97,7 +137,7 @@
       <h3>Language</h3>
       <h4>
         First Official Language
-        <select class="form-select" id="firstlang" name="firstlang" required>
+        <select class="form-select" id="firstlang" name="firstlang" onchange="show();" required>
             <option value="">Choose...</option>
               <option value="eng">English</option>
               <option value="fr">French</option>
@@ -195,7 +235,7 @@
 
       <h4 class="my-4">
         Second Official Language
-        (<span id="langchange" name="seecondlang"></span>)
+        <span id="langchange" name="seecondlang"></span>
       </h4>
       <div class="row g-3">
         <div class="col-md-3">
@@ -297,15 +337,23 @@
 
 </div>
 
-@endsection
-
-          <!-- <hr class="my-4"> -->
-
-          <!-- <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="same-address">
-            <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
-          </div>
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="save-info">
-            <label class="form-check-label" for="save-info">Save this information for next time</label>
-          </div> -->
+     <!-- Option 1: Bootstrap Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    
+    <script>
+        function show(){
+          console.log("Hello");
+          var f= document.myForm.firstlang.value;
+          console.log(f);
+          var s = document.getElementById("langchange");
+          if(f == "eng"){
+            s.innerHTML = "(French)";
+          }else if (f == "fr"){
+            s.innerHTML = "(English)";
+          }
+          
+          
+        }
+      </script>
+  </body>
+</html>
