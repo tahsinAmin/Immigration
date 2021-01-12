@@ -85,6 +85,7 @@ class DreamcController extends Controller{
         $clb+=$clb2;
 
         $total = $a + $clb + request('workexp') + request('education');
+
         $frstL = request('firstlang');
         $secondL = ($frstL == "eng") ? "fr" : "eng";
         error_log($secondL);

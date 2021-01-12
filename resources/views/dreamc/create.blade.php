@@ -1,8 +1,8 @@
-@extends('layouts.layout')
+@extends('layouts.app')
 
 @section('content')
-  <div class="wrapper create-dream">
-    <div class="container" style="width:65%">
+<div class="wrapper create-dream">
+  <div class="container" style="width:65%">
     @if (count($errors) > 0)
         <div class="alert alert-danger">
             <button type="button" class="close" data-dismiss="alert">×</button>
@@ -21,7 +21,7 @@
     @endif
   </div>
 
-  <form action="{{ route('dreamc.index') }}" class="container" name="myForm" method="POST">
+  <form action="{{ route('dreamc.index') }}" name="myForm" class="container" method="POST">
     @csrf
       <legend>Form Assessment</legend>
       <div class="form-group">
@@ -294,4 +294,31 @@
       <!-- <button type="submit" name="submit" class="btn btn-primary mt-2">Submit</button> -->
       <input type="submit" name="submit" class="btn btn-primary mt-2" value="Submit"> 
   </form>
+
+</div>
+<script>
+    function show(){
+        console.log("Hello");
+        var f= document.myForm.firstlang.value;
+        console.log(f);
+        var s = document.getElementById("langchange");
+        if(f == "eng"){
+          s.innerHTML = "(French)";
+        }else if (f == "fr"){
+          s.innerHTML = "(English)";
+        }
+    }
+</script>
+
 @endsection
+
+          <!-- <hr class="my-4"> -->
+
+          <!-- <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="same-address">
+            <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="save-info">
+            <label class="form-check-label" for="save-info">Save this information for next time</label>
+          </div> -->
