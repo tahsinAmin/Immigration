@@ -90,6 +90,11 @@ class DreamcController extends Controller{
         $secondL = ($frstL == "eng") ? "fr" : "eng";
         error_log($secondL);
 
+        $examstyle =  request('examstyle');
+        error_log($examstyle);
+
+
+
         $email_data = array(
             'name' => request('name'),
             'age' => $a,

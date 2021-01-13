@@ -96,6 +96,14 @@
       <hr class="my-4">
       <h3>Language</h3>
       <h4>
+        Exam Style
+        <select class="form-select" id="examstyle" name="examstyle" required>
+            <option value="">Choose...</option>
+              <option value="celpip">CELPIP</option>
+              <option value="ielts">IELTS</option>
+        </select>
+      </h4>
+      <h4>
         First Official Language
         <select class="form-select" id="firstlang" name="firstlang" onchange="show();" required>
             <option value="">Choose...</option>
@@ -289,9 +297,6 @@
 
       <hr class="my-4">
 
-
-
-      <!-- <button type="submit" name="submit" class="btn btn-primary mt-2">Submit</button> -->
       <input type="submit" name="submit" class="btn btn-primary mt-2" value="Submit"> 
   </form>
 
@@ -311,14 +316,3 @@
 </script>
 
 @endsection
-
-          <!-- <hr class="my-4"> -->
-
-          <!-- <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="same-address">
-            <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
-          </div>
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="save-info">
-            <label class="form-check-label" for="save-info">Save this information for next time</label>
-          </div> -->
