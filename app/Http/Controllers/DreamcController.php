@@ -93,8 +93,6 @@ class DreamcController extends Controller{
         $examstyle =  request('examstyle');
         error_log($examstyle);
 
-
-
         $email_data = array(
             'name' => request('name'),
             'age' => $a,

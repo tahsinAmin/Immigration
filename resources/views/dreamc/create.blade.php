@@ -97,213 +97,213 @@
       <h3>Language</h3>
       <h4>
         Exam Style
-        <select class="form-select" id="examstyle" name="examstyle" required>
+        <select class="form-select" id="examstyle" name="examstyle" onchange="examFormat();" required>
             <option value="">Choose...</option>
               <option value="celpip">CELPIP</option>
               <option value="ielts">IELTS</option>
         </select>
       </h4>
-      <h4>
-        First Official Language
-        <select class="form-select" id="firstlang" name="firstlang" onchange="show();" required>
-            <option value="">Choose...</option>
-              <option value="eng">English</option>
-              <option value="fr">French</option>
-        </select>
-      </h4>
-      <div class="row g-3">
-        <div class="col-md-3">
-          <label for="speaking1" class="form-label">Speaking</label>
-          <select class="form-select" id="speaking1" name="speaking1" required>
-            <option value="">Choose...</option>
-            <option value=9 >9</option>
-            <option value=8.5 >8.5</option>
-            <option value=8 >8</option>
-            <option value=7.5 >7.5</option>
-            <option value=7 >7</option>
-            <option value=6.5 >6.5</option>
-            <option value=6 >6</option>
-            <option value=5.5 >5.5</option>
-            <option value=5 >5</option>
-            <option value=4.5 >4.5</option>
-            <option value=4 >4</option>
-            <option value=3.5 >3.5</option>
-            <option value=3 >3</option>
-            <option value=2.5 >2.5</option>
-            <option value=2 >2</option>           
+      <div id="ieltsSwitch" style="display: none">
+        <h4>
+          First Official Language
+          <select class="form-select" id="firstlang" name="firstlang" onchange="show();" required>
+              <option value="">Choose...</option>
+                <option value="eng">English</option>
+                <option value="fr">French</option>
           </select>
+        </h4>
+        <div class="row g-3">
+          <div class="col-md-3">
+            <label for="speaking1" class="form-label">Speaking</label>
+            <select class="form-select" id="speaking1" name="speaking1" required>
+              <option value="">Choose...</option>
+              <option value=9 >9</option>
+              <option value=8.5 >8.5</option>
+              <option value=8 >8</option>
+              <option value=7.5 >7.5</option>
+              <option value=7 >7</option>
+              <option value=6.5 >6.5</option>
+              <option value=6 >6</option>
+              <option value=5.5 >5.5</option>
+              <option value=5 >5</option>
+              <option value=4.5 >4.5</option>
+              <option value=4 >4</option>
+              <option value=3.5 >3.5</option>
+              <option value=3 >3</option>
+              <option value=2.5 >2.5</option>
+              <option value=2 >2</option>           
+            </select>
+          </div>
+
+          <div class="col-md-3">
+            <label for="listening1" class="form-label">Listening</label>
+              <select class="form-select" id="listening1" name="listening1" required>
+              <option value="">Choose...</option>
+              <option value=9 >9</option>
+              <option value=8.5 >8.5</option>
+              <option value=8 >8</option>
+              <option value=7.5 >7.5</option>
+              <option value=7 >7</option>
+              <option value=6.5 >6.5</option>
+              <option value=6 >6</option>
+              <option value=5.5 >5.5</option>
+              <option value=5 >5</option>
+              <option value=4.5 >4.5</option>
+              <option value=4 >4</option>
+              <option value=3.5 >3.5</option>
+              <option value=3 >3</option>
+              <option value=2.5 >2.5</option>
+              <option value=2 >2</option>           
+            </select>
+          </div> 
+
+          <div class="col-md-3">
+            <label for="reading1" class="form-label">Reading</label>
+            <select class="form-select" id="reading1" name="reading1" required>
+              <option value="">Choose...</option>
+              <option value=9 >9</option>
+              <option value=8.5 >8.5</option>
+              <option value=8 >8</option>
+              <option value=7.5 >7.5</option>
+              <option value=7 >7</option>
+              <option value=6.5 >6.5</option>
+              <option value=6 >6</option>
+              <option value=5.5 >5.5</option>
+              <option value=5 >5</option>
+              <option value=4.5 >4.5</option>
+              <option value=4 >4</option>
+              <option value=3.5 >3.5</option>
+              <option value=3 >3</option>
+              <option value=2.5 >2.5</option>
+              <option value=2 >2</option>           
+            </select>
+          </div>
+
+          <div class="col-md-3">
+            <label for="writing1" class="form-label">Writing</label>
+            <select class="form-select" id="writing1" name="writing1" required>
+            <option value="">Choose...</option>
+              <option value=9 >9</option>
+              <option value=8.5 >8.5</option>
+              <option value=8 >8</option>
+              <option value=7.5 >7.5</option>
+              <option value=7 >7</option>
+              <option value=6.5 >6.5</option>
+              <option value=6 >6</option>
+              <option value=5.5 >5.5</option>
+              <option value=5 >5</option>
+              <option value=4.5 >4.5</option>
+              <option value=4 >4</option>
+              <option value=3.5 >3.5</option>
+              <option value=3 >3</option>
+              <option value=2.5 >2.5</option>
+              <option value=2 >2</option>           
+            </select>
+          </div>
         </div>
 
-        <div class="col-md-3">
-          <label for="listening1" class="form-label">Listening</label>
-            <select class="form-select" id="listening1" name="listening1" required>
+        <h4 class="my-4">
+          Second Official Language
+          <span id="langchange" name="seecondlang"></span>
+        </h4>
+        <div class="row g-3">
+          <div class="col-md-3">
+            <label for="speaking2" class="form-label">Speaking</label>
+            <select class="form-select" id="speaking2" name="speaking2" required>
+              <option value="">Choose...</option>
+              <option value=9 >9</option>
+              <option value=8.5 >8.5</option>
+              <option value=8 >8</option>
+              <option value=7.5 >7.5</option>
+              <option value=7 >7</option>
+              <option value=6.5 >6.5</option>
+              <option value=6 >6</option>
+              <option value=5.5 >5.5</option>
+              <option value=5 >5</option>
+              <option value=4.5 >4.5</option>
+              <option value=4 >4</option>
+              <option value=3.5 >3.5</option>
+              <option value=3 >3</option>
+              <option value=2.5 >2.5</option>
+              <option value=2 >2</option>           
+            </select>
+          </div>
+
+          <div class="col-md-3">
+            <label for="listening2" class="form-label">Listening</label>
+              <select class="form-select" id="listening2" name="listening2" required>
+              <option value="">Choose...</option>
+              <option value=9 >9</option>
+              <option value=8.5 >8.5</option>
+              <option value=8 >8</option>
+              <option value=7.5 >7.5</option>
+              <option value=7 >7</option>
+              <option value=6.5 >6.5</option>
+              <option value=6 >6</option>
+              <option value=5.5 >5.5</option>
+              <option value=5 >5</option>
+              <option value=4.5 >4.5</option>
+              <option value=4 >4</option>
+              <option value=3.5 >3.5</option>
+              <option value=3 >3</option>
+              <option value=2.5 >2.5</option>
+              <option value=2 >2</option>           
+            </select>
+          </div> 
+
+          <div class="col-md-3">
+            <label for="reading2" class="form-label">Reading</label>
+            <select class="form-select" id="reading2" name="reading2" required>
+              <option value="">Choose...</option>
+              <option value=9 >9</option>
+              <option value=8.5 >8.5</option>
+              <option value=8 >8</option>
+              <option value=7.5 >7.5</option>
+              <option value=7 >7</option>
+              <option value=6.5 >6.5</option>
+              <option value=6 >6</option>
+              <option value=5.5 >5.5</option>
+              <option value=5 >5</option>
+              <option value=4.5 >4.5</option>
+              <option value=4 >4</option>
+              <option value=3.5 >3.5</option>
+              <option value=3 >3</option>
+              <option value=2.5 >2.5</option>
+              <option value=2 >2</option>           
+            </select>
+          </div>
+
+          <div class="col-md-3">
+            <label for="writing2" class="form-label">Writing</label>
+            <select class="form-select" id="writing2" name="writing2" required>
             <option value="">Choose...</option>
-            <option value=9 >9</option>
-            <option value=8.5 >8.5</option>
-            <option value=8 >8</option>
-            <option value=7.5 >7.5</option>
-            <option value=7 >7</option>
-            <option value=6.5 >6.5</option>
-            <option value=6 >6</option>
-            <option value=5.5 >5.5</option>
-            <option value=5 >5</option>
-            <option value=4.5 >4.5</option>
-            <option value=4 >4</option>
-            <option value=3.5 >3.5</option>
-            <option value=3 >3</option>
-            <option value=2.5 >2.5</option>
-            <option value=2 >2</option>           
-          </select>
-        </div> 
-
-        <div class="col-md-3">
-          <label for="reading1" class="form-label">Reading</label>
-          <select class="form-select" id="reading1" name="reading1" required>
-            <option value="">Choose...</option>
-            <option value=9 >9</option>
-            <option value=8.5 >8.5</option>
-            <option value=8 >8</option>
-            <option value=7.5 >7.5</option>
-            <option value=7 >7</option>
-            <option value=6.5 >6.5</option>
-            <option value=6 >6</option>
-            <option value=5.5 >5.5</option>
-            <option value=5 >5</option>
-            <option value=4.5 >4.5</option>
-            <option value=4 >4</option>
-            <option value=3.5 >3.5</option>
-            <option value=3 >3</option>
-            <option value=2.5 >2.5</option>
-            <option value=2 >2</option>           
-          </select>
-        </div>
-
-        <div class="col-md-3">
-          <label for="writing1" class="form-label">Writing</label>
-          <select class="form-select" id="writing1" name="writing1" required>
-          <option value="">Choose...</option>
-            <option value=9 >9</option>
-            <option value=8.5 >8.5</option>
-            <option value=8 >8</option>
-            <option value=7.5 >7.5</option>
-            <option value=7 >7</option>
-            <option value=6.5 >6.5</option>
-            <option value=6 >6</option>
-            <option value=5.5 >5.5</option>
-            <option value=5 >5</option>
-            <option value=4.5 >4.5</option>
-            <option value=4 >4</option>
-            <option value=3.5 >3.5</option>
-            <option value=3 >3</option>
-            <option value=2.5 >2.5</option>
-            <option value=2 >2</option>           
-          </select>
-        </div>
-      </div>
-
-      <h4 class="my-4">
-        Second Official Language
-        <span id="langchange" name="seecondlang"></span>
-      </h4>
-      <div class="row g-3">
-        <div class="col-md-3">
-          <label for="speaking2" class="form-label">Speaking</label>
-          <select class="form-select" id="speaking2" name="speaking2" required>
-            <option value="">Choose...</option>
-            <option value=9 >9</option>
-            <option value=8.5 >8.5</option>
-            <option value=8 >8</option>
-            <option value=7.5 >7.5</option>
-            <option value=7 >7</option>
-            <option value=6.5 >6.5</option>
-            <option value=6 >6</option>
-            <option value=5.5 >5.5</option>
-            <option value=5 >5</option>
-            <option value=4.5 >4.5</option>
-            <option value=4 >4</option>
-            <option value=3.5 >3.5</option>
-            <option value=3 >3</option>
-            <option value=2.5 >2.5</option>
-            <option value=2 >2</option>           
-          </select>
-        </div>
-
-        <div class="col-md-3">
-          <label for="listening2" class="form-label">Listening</label>
-            <select class="form-select" id="listening2" name="listening2" required>
-            <option value="">Choose...</option>
-            <option value=9 >9</option>
-            <option value=8.5 >8.5</option>
-            <option value=8 >8</option>
-            <option value=7.5 >7.5</option>
-            <option value=7 >7</option>
-            <option value=6.5 >6.5</option>
-            <option value=6 >6</option>
-            <option value=5.5 >5.5</option>
-            <option value=5 >5</option>
-            <option value=4.5 >4.5</option>
-            <option value=4 >4</option>
-            <option value=3.5 >3.5</option>
-            <option value=3 >3</option>
-            <option value=2.5 >2.5</option>
-            <option value=2 >2</option>           
-          </select>
-        </div> 
-
-        <div class="col-md-3">
-          <label for="reading2" class="form-label">Reading</label>
-          <select class="form-select" id="reading2" name="reading2" required>
-            <option value="">Choose...</option>
-            <option value=9 >9</option>
-            <option value=8.5 >8.5</option>
-            <option value=8 >8</option>
-            <option value=7.5 >7.5</option>
-            <option value=7 >7</option>
-            <option value=6.5 >6.5</option>
-            <option value=6 >6</option>
-            <option value=5.5 >5.5</option>
-            <option value=5 >5</option>
-            <option value=4.5 >4.5</option>
-            <option value=4 >4</option>
-            <option value=3.5 >3.5</option>
-            <option value=3 >3</option>
-            <option value=2.5 >2.5</option>
-            <option value=2 >2</option>           
-          </select>
-        </div>
-
-        <div class="col-md-3">
-          <label for="writing2" class="form-label">Writing</label>
-          <select class="form-select" id="writing2" name="writing2" required>
-          <option value="">Choose...</option>
-            <option value=9 >9</option>
-            <option value=8.5 >8.5</option>
-            <option value=8 >8</option>
-            <option value=7.5 >7.5</option>
-            <option value=7 >7</option>
-            <option value=6.5 >6.5</option>
-            <option value=6 >6</option>
-            <option value=5.5 >5.5</option>
-            <option value=5 >5</option>
-            <option value=4.5 >4.5</option>
-            <option value=4 >4</option>
-            <option value=3.5 >3.5</option>
-            <option value=3 >3</option>
-            <option value=2.5 >2.5</option>
-            <option value=2 >2</option>           
-          </select>
+              <option value=9 >9</option>
+              <option value=8.5 >8.5</option>
+              <option value=8 >8</option>
+              <option value=7.5 >7.5</option>
+              <option value=7 >7</option>
+              <option value=6.5 >6.5</option>
+              <option value=6 >6</option>
+              <option value=5.5 >5.5</option>
+              <option value=5 >5</option>
+              <option value=4.5 >4.5</option>
+              <option value=4 >4</option>
+              <option value=3.5 >3.5</option>
+              <option value=3 >3</option>
+              <option value=2.5 >2.5</option>
+              <option value=2 >2</option>           
+            </select>
+          </div>
         </div>
       </div>
 
       <hr class="my-4">
-
       <input type="submit" name="submit" class="btn btn-primary mt-2" value="Submit"> 
   </form>
 
 </div>
 <script>
     function show(){
-        console.log("Hello");
         var f= document.myForm.firstlang.value;
         console.log(f);
         var s = document.getElementById("langchange");
@@ -312,6 +312,18 @@
         }else if (f == "fr"){
           s.innerHTML = "(English)";
         }
+    }
+
+    function examFormat(){
+      var examstyle = document.myForm.examstyle.value;
+      var ieltsSwitch = document.getElementById("ieltsSwitch");
+      if(examstyle == "celpip"){
+        console.log("CELPIP");
+        ieltsSwitch.style.display = "none";
+      }else if(examstyle == "ielts"){ 
+        console.log("IELTS");
+        ieltsSwitch.style.display = "block";
+      }
     }
 </script>
 
