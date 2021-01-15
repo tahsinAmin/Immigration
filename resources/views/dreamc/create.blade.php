@@ -103,10 +103,141 @@
               <option value="ielts">IELTS</option>
         </select>
       </h4>
+
+      <div id="celpipSwitch" style="display: none">
+        <h4>
+          First Official Language
+          <select class="form-select" id="cFirstLang" name="cFirstLang" onchange="show1();" required>
+              <option value="">Choose...</option>
+                <option value="eng">English</option>
+                <option value="fr">French</option>
+          </select>
+        </h4>
+        <div class="row g-3">
+          <div class="col-md-3">
+            <label for="speaking1" class="form-label">Speaking</label>
+            <select class="form-select" id="speaking1" name="speaking1" required>
+              <option value="">Choose...</option>
+              <option value=10>10</option>
+              <option value=9 >9</option>
+              <option value=8 >8</option>
+              <option value=7 >7</option>
+              <option value=6 >6</option>
+              <option value=5 >5</option>
+              <option value=4 >4</option>       
+            </select>
+          </div>
+
+          <div class="col-md-3">
+            <label for="listening1" class="form-label">Listening</label>
+              <select class="form-select" id="listening1" name="listening1" required>
+              <option value="">Choose...</option>
+              <option value=10>10</option>
+              <option value=9 >9</option>
+              <option value=8 >8</option>
+              <option value=7 >7</option>
+              <option value=6 >6</option>
+              <option value=5 >5</option>
+              <option value=4 >4</option>           
+            </select>
+          </div> 
+
+          <div class="col-md-3">
+            <label for="reading1" class="form-label">Reading</label>
+            <select class="form-select" id="reading1" name="reading1" required>
+              <option value="">Choose...</option>
+              <option value=10>10</option>
+              <option value=9 >9</option>
+              <option value=8 >8</option>
+              <option value=7 >7</option>
+              <option value=6 >6</option>
+              <option value=5 >5</option>
+              <option value=4 >4</option>           
+            </select>
+          </div>
+
+          <div class="col-md-3">
+            <label for="writing1" class="form-label">Writing</label>
+            <select class="form-select" id="writing1" name="writing1" required>
+              <option value="">Choose...</option>
+              <option value=10>10</option>
+              <option value=9 >9</option>
+              <option value=8 >8</option>
+              <option value=7 >7</option>
+              <option value=6 >6</option>
+              <option value=5 >5</option>
+              <option value=4 >4</option>              
+            </select>
+          </div>
+        </div>
+
+        <h4 class="my-4">
+          Second Official Language
+          <span id="cLangChange"></span>
+        </h4>
+        <div class="row g-3">
+          <div class="col-md-3">
+            <label for="speaking2" class="form-label">Speaking</label>
+            <select class="form-select" id="speaking2" name="speaking2" required>
+              <option value="">Choose...</option>
+              <option value=10>10</option>
+              <option value=9 >9</option>
+              <option value=8 >8</option>
+              <option value=7 >7</option>
+              <option value=6 >6</option>
+              <option value=5 >5</option>
+              <option value=4 >4</option>            
+            </select>
+          </div>
+
+          <div class="col-md-3">
+            <label for="listening2" class="form-label">Listening</label>
+              <select class="form-select" id="listening2" name="listening2" required>
+                <option value="">Choose...</option>
+                <option value=10>10</option>
+                <option value=9 >9</option>
+                <option value=8 >8</option>
+                <option value=7 >7</option>
+                <option value=6 >6</option>
+                <option value=5 >5</option>
+                <option value=4 >4</option>         
+              </select>
+          </div> 
+
+          <div class="col-md-3">
+            <label for="reading2" class="form-label">Reading</label>
+            <select class="form-select" id="reading2" name="reading2" required>
+                <option value="">Choose...</option>
+                <option value=10>10</option>
+                <option value=9 >9</option>
+                <option value=8 >8</option>
+                <option value=7 >7</option>
+                <option value=6 >6</option>
+                <option value=5 >5</option>
+                <option value=4 >4</option>  
+            </select>
+          </div>
+
+          <div class="col-md-3">
+            <label for="writing2" class="form-label">Writing</label>
+            <select class="form-select" id="writing2" name="writing2" required>
+                <option value="">Choose...</option>
+                <option value=10>10</option>
+                <option value=9 >9</option>
+                <option value=8 >8</option>
+                <option value=7 >7</option>
+                <option value=6 >6</option>
+                <option value=5 >5</option>
+                <option value=4 >4</option>         
+            </select>
+          </div>
+        </div>
+      </div>
+
       <div id="ieltsSwitch" style="display: none">
         <h4>
           First Official Language
-          <select class="form-select" id="firstlang" name="firstlang" onchange="show();" required>
+          <select class="form-select" id="iFirstLang" name="iFirstLang" onchange="show2();" required>
               <option value="">Choose...</option>
                 <option value="eng">English</option>
                 <option value="fr">French</option>
@@ -204,7 +335,7 @@
 
         <h4 class="my-4">
           Second Official Language
-          <span id="langchange" name="seecondlang"></span>
+          <span id="iLangChange"></span>
         </h4>
         <div class="row g-3">
           <div class="col-md-3">
@@ -276,7 +407,7 @@
           <div class="col-md-3">
             <label for="writing2" class="form-label">Writing</label>
             <select class="form-select" id="writing2" name="writing2" required>
-            <option value="">Choose...</option>
+              <option value="">Choose...</option>
               <option value=9 >9</option>
               <option value=8.5 >8.5</option>
               <option value=8 >8</option>
@@ -303,26 +434,47 @@
 
 </div>
 <script>
-    function show(){
-        var f= document.myForm.firstlang.value;
-        console.log(f);
-        var s = document.getElementById("langchange");
-        if(f == "eng"){
-          s.innerHTML = "(French)";
-        }else if (f == "fr"){
-          s.innerHTML = "(English)";
+    function show1(){
+        var cF= document.myForm.cFirstLang.value;
+        console.log(cF);
+        var cS = document.getElementById("cLangChange");
+        if(cF == "eng"){
+          cS.innerHTML = "(French)";
+        }else if (cF == "fr"){
+          cS.innerHTML = "(English)";
+        }else{
+          cS.innerHTML = "";
+        }
+    }
+
+    function show2(){
+        var iF= document.myForm.iFirstLang.value;
+        console.log(iF);
+        var iS = document.getElementById("iLangChange");
+        if(iF == "eng"){
+          iS.innerHTML = "(French)";
+        }else if (iF == "fr"){
+          iS.innerHTML = "(English)";
+        }else{
+          iS.innerHTML = "";
         }
     }
 
     function examFormat(){
       var examstyle = document.myForm.examstyle.value;
       var ieltsSwitch = document.getElementById("ieltsSwitch");
+      var celpipSwitch = document.getElementById("celpipSwitch");
       if(examstyle == "celpip"){
         console.log("CELPIP");
+        celpipSwitch.style.display = "block";
         ieltsSwitch.style.display = "none";
       }else if(examstyle == "ielts"){ 
         console.log("IELTS");
         ieltsSwitch.style.display = "block";
+        celpipSwitch.style.display = "none";
+      }else{
+        celpipSwitch.style.display = "none";
+        ieltsSwitch.style.display = "none";
       }
     }
 </script>
