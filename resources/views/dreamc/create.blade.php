@@ -108,16 +108,17 @@
         <h4>
           First Official Language
           <select class="form-select" id="cFirstLang" name="cFirstLang" onchange="show1();" required>
-              <option value="">Choose...</option>
-                <option value="eng">English</option>
-                <option value="fr">French</option>
+              <option value="n">Choose...</option>
+              <option value="eng">English</option>
+              <option value="fr">French</option>
           </select>
         </h4>
         <div class="row g-3">
+
           <div class="col-md-3">
-            <label for="speaking1" class="form-label">Speaking</label>
-            <select class="form-select" id="speaking1" name="speaking1" required>
-              <option value="">Choose...</option>
+            <label for="cSpeaking1" class="form-label">Speaking</label>
+            <select class="form-select" id="cSpeaking1" name="cSpeaking1" required>
+              <option value="0">Choose...</option>
               <option value=10>10</option>
               <option value=9 >9</option>
               <option value=8 >8</option>
@@ -129,9 +130,9 @@
           </div>
 
           <div class="col-md-3">
-            <label for="listening1" class="form-label">Listening</label>
-              <select class="form-select" id="listening1" name="listening1" required>
-              <option value="">Choose...</option>
+            <label for="cListening1" class="form-label">Listening</label>
+              <select class="form-select" id="cListening1" name="cListening1" required>
+              <option value="0">Choose...</option>
               <option value=10>10</option>
               <option value=9 >9</option>
               <option value=8 >8</option>
@@ -143,9 +144,9 @@
           </div> 
 
           <div class="col-md-3">
-            <label for="reading1" class="form-label">Reading</label>
-            <select class="form-select" id="reading1" name="reading1" required>
-              <option value="">Choose...</option>
+            <label for="cReading1" class="form-label">Reading</label>
+            <select class="form-select" id="cReading1" name="cReading1" required>
+              <option value="0">Choose...</option>
               <option value=10>10</option>
               <option value=9 >9</option>
               <option value=8 >8</option>
@@ -157,9 +158,9 @@
           </div>
 
           <div class="col-md-3">
-            <label for="writing1" class="form-label">Writing</label>
-            <select class="form-select" id="writing1" name="writing1" required>
-              <option value="">Choose...</option>
+            <label for="cWriting1" class="form-label">Writing</label>
+            <select class="form-select" id="cWriting1" name="cWriting1" required>
+              <option value="0">Choose...</option>
               <option value=10>10</option>
               <option value=9 >9</option>
               <option value=8 >8</option>
@@ -176,10 +177,11 @@
           <span id="cLangChange"></span>
         </h4>
         <div class="row g-3">
+
           <div class="col-md-3">
-            <label for="speaking2" class="form-label">Speaking</label>
-            <select class="form-select" id="speaking2" name="speaking2" required>
-              <option value="">Choose...</option>
+            <label for="cSpeaking2" class="form-label">Speaking</label>
+            <select class="form-select" id="cSpeaking2" name="cSpeaking2" required>
+              <option value="0">Choose...</option>
               <option value=10>10</option>
               <option value=9 >9</option>
               <option value=8 >8</option>
@@ -191,9 +193,9 @@
           </div>
 
           <div class="col-md-3">
-            <label for="listening2" class="form-label">Listening</label>
-              <select class="form-select" id="listening2" name="listening2" required>
-                <option value="">Choose...</option>
+            <label for="cListening2" class="form-label">Listening</label>
+              <select class="form-select" id="cListening2" name="cListening2" required>
+                <option value="0">Choose...</option>
                 <option value=10>10</option>
                 <option value=9 >9</option>
                 <option value=8 >8</option>
@@ -205,9 +207,9 @@
           </div> 
 
           <div class="col-md-3">
-            <label for="reading2" class="form-label">Reading</label>
-            <select class="form-select" id="reading2" name="reading2" required>
-                <option value="">Choose...</option>
+            <label for="cReading2" class="form-label">Reading</label>
+            <select class="form-select" id="cReading2" name="cReading2" required>
+                <option value="0">Choose...</option>
                 <option value=10>10</option>
                 <option value=9 >9</option>
                 <option value=8 >8</option>
@@ -219,9 +221,9 @@
           </div>
 
           <div class="col-md-3">
-            <label for="writing2" class="form-label">Writing</label>
-            <select class="form-select" id="writing2" name="writing2" required>
-                <option value="">Choose...</option>
+            <label for="cWriting2" class="form-label">Writing</label>
+            <select class="form-select" id="cWriting2" name="cWriting2" required>
+                <option value="0">Choose...</option>
                 <option value=10>10</option>
                 <option value=9 >9</option>
                 <option value=8 >8</option>
@@ -237,17 +239,18 @@
       <div id="ieltsSwitch" style="display: none">
         <h4>
           First Official Language
-          <select class="form-select" id="iFirstLang" name="iFirstLang" onchange="show2();" required>
-              <option value="">Choose...</option>
+          <select class="form-select" id="iFirstLang" name="iFirstLang" onchange="show2();">
+              <option value="n">Choose...</option>
                 <option value="eng">English</option>
                 <option value="fr">French</option>
           </select>
         </h4>
         <div class="row g-3">
+
           <div class="col-md-3">
-            <label for="speaking1" class="form-label">Speaking</label>
-            <select class="form-select" id="speaking1" name="speaking1" required>
-              <option value="">Choose...</option>
+            <label for="iSpeaking1" class="form-label">Speaking</label>
+            <select class="form-select" id="iSpeaking1" name="iSpeaking1" required>
+              <option value="0">Choose...</option>
               <option value=9 >9</option>
               <option value=8.5 >8.5</option>
               <option value=8 >8</option>
@@ -267,9 +270,9 @@
           </div>
 
           <div class="col-md-3">
-            <label for="listening1" class="form-label">Listening</label>
-              <select class="form-select" id="listening1" name="listening1" required>
-              <option value="">Choose...</option>
+            <label for="iListening1" class="form-label">Listening</label>
+              <select class="form-select" id="iListening1" name="iListening1" required>
+              <option value="0">Choose...</option>
               <option value=9 >9</option>
               <option value=8.5 >8.5</option>
               <option value=8 >8</option>
@@ -289,9 +292,9 @@
           </div> 
 
           <div class="col-md-3">
-            <label for="reading1" class="form-label">Reading</label>
-            <select class="form-select" id="reading1" name="reading1" required>
-              <option value="">Choose...</option>
+            <label for="iReading1" class="form-label">Reading</label>
+            <select class="form-select" id="iReading1" name="iReading1" required>
+              <option value="0">Choose...</option>
               <option value=9 >9</option>
               <option value=8.5 >8.5</option>
               <option value=8 >8</option>
@@ -311,9 +314,9 @@
           </div>
 
           <div class="col-md-3">
-            <label for="writing1" class="form-label">Writing</label>
-            <select class="form-select" id="writing1" name="writing1" required>
-            <option value="">Choose...</option>
+            <label for="iWriting1" class="form-label">Writing</label>
+            <select class="form-select" id="iWriting1" name="iWriting1" required>
+            <option value="0">Choose...</option>
               <option value=9 >9</option>
               <option value=8.5 >8.5</option>
               <option value=8 >8</option>
@@ -339,9 +342,9 @@
         </h4>
         <div class="row g-3">
           <div class="col-md-3">
-            <label for="speaking2" class="form-label">Speaking</label>
-            <select class="form-select" id="speaking2" name="speaking2" required>
-              <option value="">Choose...</option>
+            <label for="iSpeaking2" class="form-label">Speaking</label>
+            <select class="form-select" id="iSpeaking2" name="iSpeaking2" required>
+              <option value="0">Choose...</option>
               <option value=9 >9</option>
               <option value=8.5 >8.5</option>
               <option value=8 >8</option>
@@ -361,9 +364,9 @@
           </div>
 
           <div class="col-md-3">
-            <label for="listening2" class="form-label">Listening</label>
-              <select class="form-select" id="listening2" name="listening2" required>
-              <option value="">Choose...</option>
+            <label for="iListening2" class="form-label">Listening</label>
+              <select class="form-select" id="iListening2" name="iListening2" required>
+              <option value="0">Choose...</option>
               <option value=9 >9</option>
               <option value=8.5 >8.5</option>
               <option value=8 >8</option>
@@ -383,9 +386,9 @@
           </div> 
 
           <div class="col-md-3">
-            <label for="reading2" class="form-label">Reading</label>
-            <select class="form-select" id="reading2" name="reading2" required>
-              <option value="">Choose...</option>
+            <label for="iReading2" class="form-label">Reading</label>
+            <select class="form-select" id="iReading2" name="iReading2" required>
+              <option value="0">Choose...</option>
               <option value=9 >9</option>
               <option value=8.5 >8.5</option>
               <option value=8 >8</option>
@@ -405,9 +408,9 @@
           </div>
 
           <div class="col-md-3">
-            <label for="writing2" class="form-label">Writing</label>
-            <select class="form-select" id="writing2" name="writing2" required>
-              <option value="">Choose...</option>
+            <label for="iWriting2" class="form-label">Writing</label>
+            <select class="form-select" id="iWriting2" name="iWriting2" required>
+              <option value="0">Choose...</option>
               <option value=9 >9</option>
               <option value=8.5 >8.5</option>
               <option value=8 >8</option>
@@ -430,6 +433,7 @@
 
       <hr class="my-4">
       <input type="submit" name="submit" class="btn btn-primary mt-2" value="Submit"> 
+      <!-- <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> -->
   </form>
 
 </div>

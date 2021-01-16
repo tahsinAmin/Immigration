@@ -41,12 +41,13 @@ class DreamcController extends Controller{
         $dc->workexp = request('workexp');
 
         $value = request('age');
-        $a= ($value < 47)? $age[$value] :0; 
+        $a= ($value < 47)? $age[$value] :0;
 
-        $speaking = request('speaking1');
-        $listening = request('listening1');
-        $reading = request('reading1');
-        $writing = request('writing1');
+
+        $speaking = request('iSpeaking1');
+        $listening = request('iListening1');
+        $reading = request('iReading1');
+        $writing = request('iWriting1');
         $clb = 0;
 
         if($speaking>=7.0 &&  $listening>=8.0 && $reading>=7.0 && $writing>=7.0){
@@ -63,10 +64,10 @@ class DreamcController extends Controller{
             error_log("Not eligible to apply");
         }
 
-        $speaking = request('speaking2');
-        $listening = request('listening2');
-        $reading = request('reading2');
-        $writing = request('writing2');
+        $speaking = request('iSpeaking2');
+        $listening = request('iListening2');
+        $reading = request('iReading2');
+        $writing = request('iWriting2');
         $clb2 = 4;
         if($speaking>=7.0 &&  $listening>=8.0 && $reading>=7.0 && $writing>=7.0){
 
