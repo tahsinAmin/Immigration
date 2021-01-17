@@ -41,58 +41,88 @@ class DreamcController extends Controller{
         $dc->workexp = request('workexp');
 
         $value = request('age');
-        $a= ($value < 47)? $age[$value] :0;
+        $a = ($value < 47)? $age[$value] :0;
 
-
-        $speaking = request('iSpeaking1');
-        $listening = request('iListening1');
-        $reading = request('iReading1');
-        $writing = request('iWriting1');
+        $examstyle = request('examstyle');
         $clb = 0;
+        if($examstyle == "celpip"){
+            $speaking = request('cSpeaking1');
+            $listening = request('cListening1');
+            $reading = request('cReading1');
+            $writing = request('cWriting1');
 
-        if($speaking>=7.0 &&  $listening>=8.0 && $reading>=7.0 && $writing>=7.0){
-            $clb = 24;
-        } else if($speaking>=6.5 &&  $listening>=7.5 && $reading>=6.5 && $writing>=6.5){
-            $clb = 20;
-        } else if($speaking>=6.0 &&  $listening>=6.0 && $reading>=6.0 && $writing>=6.0){
-            $clb = 16;
-        } else if($speaking>=5.5 &&  $listening>=5.5 && $reading>=5.0 && $writing>=5.5){
+            if($speaking>=9.0 &&  $listening>=9.0 && $reading>=9.0 && $writing>=9.0){
+                $clb = 24;
+            } else if($speaking==8.0 &&  $listening==8.0 && $reading==8.0 && $writing==8.0){
+                $clb = 20;
+            } else if($speaking==7.0 &&  $listening==7.0 && $reading==7.0 && $writing==7.0){
+                $clb = 16;
+            } else if($speaking==6.0 &&  $listening==6.0 && $reading==6.0 && $writing==6.0){
 
-        } else if($speaking>=5.0 &&  $listening>=5.0 && $reading>=4.0 && $writing>=5.0){
+            } else if($speaking==5.0 &&  $listening==5.0 && $reading==5.0 && $writing==5.0){
 
-        } else{
-            error_log("Not eligible to apply");
-        }
+            } else {
+                error_log("Not eligible to apply");
+            }
 
-        $speaking = request('iSpeaking2');
-        $listening = request('iListening2');
-        $reading = request('iReading2');
-        $writing = request('iWriting2');
-        $clb2 = 4;
-        if($speaking>=7.0 &&  $listening>=8.0 && $reading>=7.0 && $writing>=7.0){
+            $speaking = request('cSpeaking2');
+            $listening = request('cListening2');
+            $reading = request('cReading2');
+            $writing = request('cWriting2');
+            $clb2 = 4;
+            if($speaking>=5.0 &&  $listening>=5.0 && $reading>=5.0 && $writing>=5.0){
 
-        } else if($speaking>=6.5 &&  $listening>=7.5 && $reading>=6.5 && $writing>=6.5){
+            } else{
+                $clb2 = 0;
+            }
 
-        } else if($speaking>=6.0 &&  $listening>=6.0 && $reading>=6.0 && $writing>=6.0){
-
-        } else if($speaking>=5.5 &&  $listening>=5.5 && $reading>=5.0 && $writing>=5.5){
-
-        } else if($speaking>=5.0 &&  $listening>=5.0 && $reading>=4.0 && $writing>=5.0){
+            $clb+=$clb2;
             
-        } else{
-            $clb2 = 0;
-        }
+        }else if($examstyle == "ielts"){
+            $speaking = request('iSpeaking1');
+            $listening = request('iListening1');
+            $reading = request('iReading1');
+            $writing = request('iWriting1');
 
-        $clb+=$clb2;
+            if($speaking>=7.0 &&  $listening>=8.0 && $reading>=7.0 && $writing>=7.0){
+                $clb = 24;
+            } else if($speaking>=6.5 &&  $listening>=7.5 && $reading>=6.5 && $writing>=6.5){
+                $clb = 20;
+            } else if($speaking>=6.0 &&  $listening>=6.0 && $reading>=6.0 && $writing>=6.0){
+                $clb = 16;
+            } else if($speaking>=5.5 &&  $listening>=5.5 && $reading>=5.0 && $writing>=5.5){
+
+            } else if($speaking>=5.0 &&  $listening>=5.0 && $reading>=4.0 && $writing>=5.0){
+
+            } else{
+                error_log("Not eligible to apply");
+            }
+
+            $speaking = request('iSpeaking2');
+            $listening = request('iListening2');
+            $reading = request('iReading2');
+            $writing = request('iWriting2');
+            $clb2 = 4;
+            if($speaking>=7.0 &&  $listening>=8.0 && $reading>=7.0 && $writing>=7.0){
+
+            } else if($speaking>=6.5 &&  $listening>=7.5 && $reading>=6.5 && $writing>=6.5){
+
+            } else if($speaking>=6.0 &&  $listening>=6.0 && $reading>=6.0 && $writing>=6.0){
+
+            } else if($speaking>=5.5 &&  $listening>=5.5 && $reading>=5.0 && $writing>=5.5){
+
+            } else if($speaking>=5.0 &&  $listening>=5.0 && $reading>=4.0 && $writing>=5.0){
+                
+            } else{
+                $clb2 = 0;
+            }
+            $clb+=$clb2;       
+        }
 
         $total = $a + $clb + request('workexp') + request('education');
-
         $frstL = request('firstlang');
         $secondL = ($frstL == "eng") ? "fr" : "eng";
         error_log($secondL);
-
-        $examstyle =  request('examstyle');
-        error_log($examstyle);
 
         $email_data = array(
             'name' => request('name'),
