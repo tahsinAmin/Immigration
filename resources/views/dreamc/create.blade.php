@@ -37,29 +37,6 @@
         <input type="number" name="age" class="form-control" id="age" placeholder="Age" required>
       </div>
 
-      <div class="form-group mt-4">
-          <h4>Work Experience</h4>
-          <div class="form-check">
-            <input id="zero" name="workexp" type="radio" class="form-check-input" value=0 checked required>
-            <label class="form-check-label" for="zero">None</label>
-          </div>
-          <div class="form-check">
-            <input id="one" name="workexp" type="radio" class="form-check-input" value=9 required>
-            <label class="form-check-label" for="one">1 year</label>
-          </div>
-          <div class="form-check">
-            <input id="twothree" name="workexp" type="radio" class="form-check-input" value=11 required>
-            <label class="form-check-label" for="twothree">2-3 years</label>
-          </div>
-          <div class="form-check">
-            <input id="fourfive" name="workexp" type="radio" class="form-check-input" value=13 required>
-            <label class="form-check-label" for="fourfive">4-5 years</label>
-          </div>
-          <div class="form-check">
-            <input id="six" name="workexp" type="radio" class="form-check-input" value=15 required>
-            <label class="form-check-label" for="six">6 or more years</label>
-          </div>                
-      </div>
 
       <div class="form-group mt-4">
           <h4>Education</h4>
@@ -67,6 +44,7 @@
             <input id="phd" name="education" type="radio" class="form-check-input" value=25 required>
             <label class="form-check-label" for="phd">PhD</label>
           </div>
+
           <div class="form-check">
             <input id="master" name="education" type="radio" class="form-check-input" value=23 required>
             <label class="form-check-label" for="master">Master</label>
@@ -91,6 +69,30 @@
             <input id="highschool" name="education" type="radio" class="form-check-input" value=5 required>
             <label class="form-check-label" for="highschool">High School</label>
           </div>            
+      </div>
+
+      <div class="form-group mt-4">
+          <h4>Work Experience</h4>
+          <div class="form-check">
+            <input id="zero" name="workexp" type="radio" class="form-check-input" value=0 checked required>
+            <label class="form-check-label" for="zero">None</label>
+          </div>
+          <div class="form-check">
+            <input id="one" name="workexp" type="radio" class="form-check-input" value=9 required>
+            <label class="form-check-label" for="one">1 year</label>
+          </div>
+          <div class="form-check">
+            <input id="twothree" name="workexp" type="radio" class="form-check-input" value=11 required>
+            <label class="form-check-label" for="twothree">2-3 years</label>
+          </div>
+          <div class="form-check">
+            <input id="fourfive" name="workexp" type="radio" class="form-check-input" value=13 required>
+            <label class="form-check-label" for="fourfive">4-5 years</label>
+          </div>
+          <div class="form-check">
+            <input id="six" name="workexp" type="radio" class="form-check-input" value=15 required>
+            <label class="form-check-label" for="six">6 or more years</label>
+          </div>                
       </div>
 
       <hr class="my-4">
@@ -432,8 +434,69 @@
       </div>
 
       <hr class="my-4">
-      <input type="submit" name="submit" class="btn btn-primary mt-2" value="Submit"> 
-      <!-- <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> -->
+
+      <div class="form-group mt-4">
+          <h4>Adaptability</h4>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="5">
+            <label class="form-check-label" for="flexCheckDefault">
+            Your spouse or partner’s language level
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="5">
+            <label class="form-check-label" for="flexCheckChecked">
+            Your past studies in Canada
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="5">
+            <label class="form-check-label" for="flexCheckDefault">
+            Your spouse or partner’s past studies in Canada
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="10">
+            <label class="form-check-label" for="flexCheckChecked">
+            Your past work in Canada
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="5">
+            <label class="form-check-label" for="flexCheckDefault">
+            Your spouse or common-law partner’s past work in Canada
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="5">
+            <label class="form-check-label" for="flexCheckChecked">
+            Arranged employment in Canada
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="5">
+            <label class="form-check-label" for="flexCheckDefault">
+            Relatives in Canada
+            </label>
+          </div>
+      </div>
+
+      <hr class="my-4">
+
+      <!-- <input type="submit" name="submit" class="btn btn-primary mt-2" >  -->
+
+      <button class="btn btn-primary mt-2" id="submitBtn" name="submit" type="submit">
+        Submit
+      </button>
+
+      <!-- <button class="btn btn-primary" type="button" disabled>
+        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+        Loading...
+      </button> -->
+
   </form>
 
 </div>
@@ -481,6 +544,7 @@
         ieltsSwitch.style.display = "none";
       }
     }
+
 </script>
 
 @endsection
