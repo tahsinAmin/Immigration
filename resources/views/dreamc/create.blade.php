@@ -654,7 +654,7 @@
             </label>
           </div>
 
-          <div class="form-check" id="spouseStudy">
+          <div class="form-check" id="spouseStudy" style="display: none">
             <input class="form-check-input" id="sStudy" type="checkbox" value="5">
             <label class="form-check-label" for="sStudy">
             Your spouse or partner’s past studies in Canada
@@ -758,7 +758,8 @@
     }
 
     function spouseRelatedInfo(){
-
+      var spouseStudy =  document.getElementById("spouseStudy");
+      spouseStudy.style.display = (spouseStudy.style.display == "none") ? "block": "none";
     }
 
 
