@@ -101,8 +101,9 @@
         Exam Style
         <select class="form-select" id="examstyle" name="examstyle" onchange="examFormat();" required>
             <option value="">Choose...</option>
-              <option value="celpip">CELPIP</option>
-              <option value="ielts">IELTS</option>
+            <option value="celpip">CELPIP</option>
+            <option value="ielts">IELTS</option>
+            <!-- <option value="tef">TEF</option> -->
         </select>
       </h4>
 
@@ -433,10 +434,212 @@
         </div>
       </div>
 
+      <!-- <div id="tefSwitch" style="display: none">
+        <h4>
+          First Official Language
+          <select class="form-select" id="tFirstLang" name="tFirstLang" onchange="show3();">
+              <option value="n">Choose...</option>
+                <option value="eng">English</option>
+                <option value="fr">French</option>
+          </select>
+        </h4>
+        <div class="row g-3">
+
+          <div class="col-md-3">
+            <label for="iSpeaking1" class="form-label">Speaking</label>
+            <select class="form-select" id="iSpeaking1" name="iSpeaking1" required>
+              <option value="0">Choose...</option>
+              <option value=9 >9</option>
+              <option value=8.5 >8.5</option>
+              <option value=8 >8</option>
+              <option value=7.5 >7.5</option>
+              <option value=7 >7</option>
+              <option value=6.5 >6.5</option>
+              <option value=6 >6</option>
+              <option value=5.5 >5.5</option>
+              <option value=5 >5</option>
+              <option value=4.5 >4.5</option>
+              <option value=4 >4</option>
+              <option value=3.5 >3.5</option>
+              <option value=3 >3</option>
+              <option value=2.5 >2.5</option>
+              <option value=2 >2</option>           
+            </select>
+          </div>
+
+          <div class="col-md-3">
+            <label for="iListening1" class="form-label">Listening</label>
+              <select class="form-select" id="iListening1" name="iListening1" required>
+              <option value="0">Choose...</option>
+              <option value=9 >9</option>
+              <option value=8.5 >8.5</option>
+              <option value=8 >8</option>
+              <option value=7.5 >7.5</option>
+              <option value=7 >7</option>
+              <option value=6.5 >6.5</option>
+              <option value=6 >6</option>
+              <option value=5.5 >5.5</option>
+              <option value=5 >5</option>
+              <option value=4.5 >4.5</option>
+              <option value=4 >4</option>
+              <option value=3.5 >3.5</option>
+              <option value=3 >3</option>
+              <option value=2.5 >2.5</option>
+              <option value=2 >2</option>           
+            </select>
+          </div> 
+
+          <div class="col-md-3">
+            <label for="iReading1" class="form-label">Reading</label>
+            <select class="form-select" id="iReading1" name="iReading1" required>
+              <option value="0">Choose...</option>
+              <option value=9 >9</option>
+              <option value=8.5 >8.5</option>
+              <option value=8 >8</option>
+              <option value=7.5 >7.5</option>
+              <option value=7 >7</option>
+              <option value=6.5 >6.5</option>
+              <option value=6 >6</option>
+              <option value=5.5 >5.5</option>
+              <option value=5 >5</option>
+              <option value=4.5 >4.5</option>
+              <option value=4 >4</option>
+              <option value=3.5 >3.5</option>
+              <option value=3 >3</option>
+              <option value=2.5 >2.5</option>
+              <option value=2 >2</option>           
+            </select>
+          </div>
+
+          <div class="col-md-3">
+            <label for="iWriting1" class="form-label">Writing</label>
+            <select class="form-select" id="iWriting1" name="iWriting1" required>
+            <option value="0">Choose...</option>
+              <option value=9 >9</option>
+              <option value=8.5 >8.5</option>
+              <option value=8 >8</option>
+              <option value=7.5 >7.5</option>
+              <option value=7 >7</option>
+              <option value=6.5 >6.5</option>
+              <option value=6 >6</option>
+              <option value=5.5 >5.5</option>
+              <option value=5 >5</option>
+              <option value=4.5 >4.5</option>
+              <option value=4 >4</option>
+              <option value=3.5 >3.5</option>
+              <option value=3 >3</option>
+              <option value=2.5 >2.5</option>
+              <option value=2 >2</option>           
+            </select>
+          </div>
+        </div>
+
+        <h4 class="my-4">
+          Second Official Language
+          <span id="iLangChange"></span>
+        </h4>
+        <div class="row g-3">
+          <div class="col-md-3">
+            <label for="iSpeaking2" class="form-label">Speaking</label>
+            <select class="form-select" id="iSpeaking2" name="iSpeaking2" required>
+              <option value="0">Choose...</option>
+              <option value=9 >9</option>
+              <option value=8.5 >8.5</option>
+              <option value=8 >8</option>
+              <option value=7.5 >7.5</option>
+              <option value=7 >7</option>
+              <option value=6.5 >6.5</option>
+              <option value=6 >6</option>
+              <option value=5.5 >5.5</option>
+              <option value=5 >5</option>
+              <option value=4.5 >4.5</option>
+              <option value=4 >4</option>
+              <option value=3.5 >3.5</option>
+              <option value=3 >3</option>
+              <option value=2.5 >2.5</option>
+              <option value=2 >2</option>           
+            </select>
+          </div>
+
+          <div class="col-md-3">
+            <label for="iListening2" class="form-label">Listening</label>
+              <select class="form-select" id="iListening2" name="iListening2" required>
+              <option value="0">Choose...</option>
+              <option value=9 >9</option>
+              <option value=8.5 >8.5</option>
+              <option value=8 >8</option>
+              <option value=7.5 >7.5</option>
+              <option value=7 >7</option>
+              <option value=6.5 >6.5</option>
+              <option value=6 >6</option>
+              <option value=5.5 >5.5</option>
+              <option value=5 >5</option>
+              <option value=4.5 >4.5</option>
+              <option value=4 >4</option>
+              <option value=3.5 >3.5</option>
+              <option value=3 >3</option>
+              <option value=2.5 >2.5</option>
+              <option value=2 >2</option>           
+            </select>
+          </div> 
+
+          <div class="col-md-3">
+            <label for="iReading2" class="form-label">Reading</label>
+            <select class="form-select" id="iReading2" name="iReading2" required>
+              <option value="0">Choose...</option>
+              <option value=9 >9</option>
+              <option value=8.5 >8.5</option>
+              <option value=8 >8</option>
+              <option value=7.5 >7.5</option>
+              <option value=7 >7</option>
+              <option value=6.5 >6.5</option>
+              <option value=6 >6</option>
+              <option value=5.5 >5.5</option>
+              <option value=5 >5</option>
+              <option value=4.5 >4.5</option>
+              <option value=4 >4</option>
+              <option value=3.5 >3.5</option>
+              <option value=3 >3</option>
+              <option value=2.5 >2.5</option>
+              <option value=2 >2</option>           
+            </select>
+          </div>
+
+          <div class="col-md-3">
+            <label for="iWriting2" class="form-label">Writing</label>
+            <select class="form-select" id="iWriting2" name="iWriting2" required>
+              <option value="0">Choose...</option>
+              <option value=9 >9</option>
+              <option value=8.5 >8.5</option>
+              <option value=8 >8</option>
+              <option value=7.5 >7.5</option>
+              <option value=7 >7</option>
+              <option value=6.5 >6.5</option>
+              <option value=6 >6</option>
+              <option value=5.5 >5.5</option>
+              <option value=5 >5</option>
+              <option value=4.5 >4.5</option>
+              <option value=4 >4</option>
+              <option value=3.5 >3.5</option>
+              <option value=3 >3</option>
+              <option value=2.5 >2.5</option>
+              <option value=2 >2</option>           
+            </select>
+          </div>
+        </div>
+      </div> -->
+
       <hr class="my-4">
 
       <div class="form-group mt-4">
           <h4>Adaptability</h4>
+          
+          <div class="form-check">
+            <input class="form-check-input" id="married" onclick="spouseRelatedInfo();" type="checkbox" value="0">
+            <label class="form-check-label" for="married">
+            Are you married?
+            </label>
+          </div>
 
           <div class="form-check">
             <input class="form-check-input" type="checkbox" value="5">
@@ -451,9 +654,9 @@
             </label>
           </div>
 
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="5">
-            <label class="form-check-label" for="flexCheckDefault">
+          <div class="form-check" id="spouseStudy">
+            <input class="form-check-input" id="sStudy" type="checkbox" value="5">
+            <label class="form-check-label" for="sStudy">
             Your spouse or partner’s past studies in Canada
             </label>
           </div>
@@ -501,6 +704,33 @@
 
 </div>
 <script>
+    function examFormat(){
+      var examstyle = document.myForm.examstyle.value;
+      var celpipSwitch = document.getElementById("celpipSwitch");
+      var ieltsSwitch = document.getElementById("ieltsSwitch");
+      var tefSwitch = document.getElementById("tefSwitch");
+
+      if(examstyle == "celpip"){
+        console.log("CELPIP");
+        celpipSwitch.style.display = "block";
+        ieltsSwitch.style.display = "none";
+        tefSwitch.style.display = "none";
+      }else if(examstyle == "ielts"){ 
+        console.log("IELTS");
+        ieltsSwitch.style.display = "block";
+        celpipSwitch.style.display = "none";
+        tefSwitch.style.display = "none";
+      }else if(examstyle == "tef"){ 
+        celpipSwitch.style.display = "none";
+        ieltsSwitch.style.display = "none";
+        tefSwitch.style.display = "block";
+      }else{
+        celpipSwitch.style.display = "none";
+        ieltsSwitch.style.display = "none";
+        tefSwitch.style.display = "none";
+      }
+    }
+
     function show1(){
         var cF= document.myForm.cFirstLang.value;
         console.log(cF);
@@ -527,23 +757,10 @@
         }
     }
 
-    function examFormat(){
-      var examstyle = document.myForm.examstyle.value;
-      var ieltsSwitch = document.getElementById("ieltsSwitch");
-      var celpipSwitch = document.getElementById("celpipSwitch");
-      if(examstyle == "celpip"){
-        console.log("CELPIP");
-        celpipSwitch.style.display = "block";
-        ieltsSwitch.style.display = "none";
-      }else if(examstyle == "ielts"){ 
-        console.log("IELTS");
-        ieltsSwitch.style.display = "block";
-        celpipSwitch.style.display = "none";
-      }else{
-        celpipSwitch.style.display = "none";
-        ieltsSwitch.style.display = "none";
-      }
+    function spouseRelatedInfo(){
+
     }
+
 
 </script>
 
