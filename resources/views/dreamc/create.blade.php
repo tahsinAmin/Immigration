@@ -640,37 +640,37 @@
             Are you married?
             </label>
           </div>
-
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="5">
-            <label class="form-check-label" for="flexCheckDefault">
-            Your spouse or partner’s language level
-            </label>
+          <div id="spouseRelated" style="display: none">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="5">
+              <label class="form-check-label" for="flexCheckDefault">
+              Your spouse or partner’s language level
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" id="sStudy" type="checkbox" value="5">
+              <label class="form-check-label" for="sStudy">
+              Your spouse or partner’s past studies in Canada
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="5">
+              <label class="form-check-label" for="flexCheckDefault">
+              Your spouse or common-law partner’s past work in Canada
+              </label>
+            </div>         
           </div>
+
           <div class="form-check">
             <input class="form-check-input" type="checkbox" value="5">
             <label class="form-check-label" for="flexCheckChecked">
             Your past studies in Canada
             </label>
           </div>
-
-          <div class="form-check" id="spouseStudy" style="display: none">
-            <input class="form-check-input" id="sStudy" type="checkbox" value="5">
-            <label class="form-check-label" for="sStudy">
-            Your spouse or partner’s past studies in Canada
-            </label>
-          </div>
           <div class="form-check">
             <input class="form-check-input" type="checkbox" value="10">
             <label class="form-check-label" for="flexCheckChecked">
             Your past work in Canada
-            </label>
-          </div>
-
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="5">
-            <label class="form-check-label" for="flexCheckDefault">
-            Your spouse or common-law partner’s past work in Canada
             </label>
           </div>
           <div class="form-check">
@@ -695,10 +695,7 @@
         Submit
       </button>
 
-      <!-- <button class="btn btn-primary" type="button" disabled>
-        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-        Loading...
-      </button> -->
+
 
   </form>
 
@@ -708,26 +705,26 @@
       var examstyle = document.myForm.examstyle.value;
       var celpipSwitch = document.getElementById("celpipSwitch");
       var ieltsSwitch = document.getElementById("ieltsSwitch");
-      var tefSwitch = document.getElementById("tefSwitch");
+      // var tefSwitch = document.getElementById("tefSwitch");
 
       if(examstyle == "celpip"){
         console.log("CELPIP");
         celpipSwitch.style.display = "block";
         ieltsSwitch.style.display = "none";
-        tefSwitch.style.display = "none";
+        // tefSwitch.style.display = "none";
       }else if(examstyle == "ielts"){ 
         console.log("IELTS");
         ieltsSwitch.style.display = "block";
         celpipSwitch.style.display = "none";
-        tefSwitch.style.display = "none";
+        // tefSwitch.style.display = "none";
       }else if(examstyle == "tef"){ 
         celpipSwitch.style.display = "none";
         ieltsSwitch.style.display = "none";
-        tefSwitch.style.display = "block";
+        // tefSwitch.style.display = "block";
       }else{
         celpipSwitch.style.display = "none";
         ieltsSwitch.style.display = "none";
-        tefSwitch.style.display = "none";
+        // tefSwitch.style.display = "none";
       }
     }
 
@@ -758,8 +755,8 @@
     }
 
     function spouseRelatedInfo(){
-      var spouseStudy =  document.getElementById("spouseStudy");
-      spouseStudy.style.display = (spouseStudy.style.display == "none") ? "block": "none";
+      var spouseRelated =  document.getElementById("spouseRelated");
+      spouseRelated.style.display = (spouseRelated.style.display == "none") ? "block": "none";
     }
 
 
