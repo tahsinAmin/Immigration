@@ -632,60 +632,56 @@
       <hr class="my-4">
 
       <div class="form-group mt-4">
-          <h4>Adaptability</h4>
-          
-          <div class="form-check">
-            <input class="form-check-input" id="married" onclick="spouseRelatedInfo();" type="checkbox" value="0">
-            <label class="form-check-label" for="married">
-            Are you married?
-            </label>
+        <h4>Adaptability</h4>
+        <input id="married" onclick="spouseRelatedInfo();" type=checkbox>
+        <label class="form-check-label" for="married">
+          Are you married?
+        </label>
+        <div id="spouseRelated" style="display: none;">
+          <div class="form-check">             
+            <input  class="form-check-input" type=checkbox name=ckb value=5 onclick='chkcontrol(1)';>
+          <label class="form-check-label">
+            Your spouse or partner’s language level
+          </label>
           </div>
-          <div id="spouseRelated" style="display: none">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="5">
-              <label class="form-check-label" for="flexCheckDefault">
-              Your spouse or partner’s language level
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" id="sStudy" type="checkbox" value="5">
-              <label class="form-check-label" for="sStudy">
-              Your spouse or partner’s past studies in Canada
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="5">
-              <label class="form-check-label" for="flexCheckDefault">
+          <div class="form-check">             
+            <input  class="form-check-input" type=checkbox name=ckb value=5 onclick='chkcontrol(2)';>
+          <label class="form-check-label">
+            Your spouse or partner’s past studies in Canada
+          </label>
+          </div>
+          <div class="form-check">             
+            <input  class="form-check-input" type=checkbox name=ckb value=5 onclick='chkcontrol(3)';>
+            <label class="form-check-label">
               Your spouse or common-law partner’s past work in Canada
-              </label>
-            </div>         
-          </div>
-
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="5">
-            <label class="form-check-label" for="flexCheckChecked">
-            Your past studies in Canada
             </label>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="10">
-            <label class="form-check-label" for="flexCheckChecked">
-            Your past work in Canada
-            </label>
+        </div>
+        <div class="form-check">              
+          <input  class="form-check-input" type=checkbox name=ckb value=10 onclick='chkcontrol(4)';>
+        <label class="form-check-label">
+          Your past studies in Canada
+        </label>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="5">
-            <label class="form-check-label" for="flexCheckChecked">
-            Arranged employment in Canada
-            </label>
+        <div class="form-check">             
+          <input  class="form-check-input" type=checkbox name=ckb value=5 onclick='chkcontrol(5)';>
+        <label class="form-check-label">
+          Your past work in Canada
+        </label>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="5">
-            <label class="form-check-label" for="flexCheckDefault">
+        <div class="form-check">          
+          <input  class="form-check-input" type=checkbox name=ckb value=5 onclick='chkcontrol(6)';>
+        <label class="form-check-label">
+          Arranged employment in Canada
+        </label>
+          </div>
+        <div class="form-check">   
+          <input  class="form-check-input" type=checkbox name=ckb value=5 onclick='chkcontrol(7)';
+          <label class="form-check-label">
             Relatives in Canada
-            </label>
-          </div>
-      </div>
+          </label>
+        </div>  
+      </div> 
 
       <hr class="my-4">
 
@@ -754,9 +750,30 @@
         }
     }
 
+// Adaptability section
     function spouseRelatedInfo(){
+      console.log("Hello");
       var spouseRelated =  document.getElementById("spouseRelated");
       spouseRelated.style.display = (spouseRelated.style.display == "none") ? "block": "none";
+    }
+
+    function chkcontrol(j) {
+      var sum=0;
+      for(var i=0; i < document.myForm.ckb.length; i++){
+      
+        if(document.myForm.ckb[i].checked){
+          sum = sum + parseInt(document.myForm.ckb[i].value);
+        }
+        
+        if(sum >10){
+          sum = sum - parseInt(document.myForm.ckb[j].value);
+          // document.form1.ckb[j].checked = false ;
+          for(var i=0; i < document.myForm.ckb.length; i++){
+            document.myForm.ckb[i].disabled= true;
+          }
+          alert("It seems you have reached beyond the maximum points in the Adaptibility Section") 
+        }
+      }
     }
 
 

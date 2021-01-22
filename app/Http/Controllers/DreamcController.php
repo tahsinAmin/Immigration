@@ -124,6 +124,15 @@ class DreamcController extends Controller{
         $secondL = ($frstL == "eng") ? "fr" : "eng";
         error_log($secondL);
 
+        $ckb = request('ckb');
+        error_log($ckb[0]);
+        error_log($ckb[1]);
+        error_log($ckb[2]);
+        error_log($ckb[3]);
+        error_log($ckb[4]);
+        error_log($ckb[5]);
+        error_log($ckb[6]);
+
         $email_data = array(
             'name' => request('name'),
             'age' => $a,

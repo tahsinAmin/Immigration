@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Dreamc extends Model{
-    use HasFactory;
-    protected $table = 'dreamc';
-}
+    class Dreamc extends Model{
+        use HasFactory;
+        protected $table = 'dreamc';
+    }
