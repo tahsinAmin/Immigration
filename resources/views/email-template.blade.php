@@ -67,7 +67,7 @@
   <tr>
       <td><b>Adaptability</b></td>
       <td>10</td>
-      <td>80</td>
+      <td>{{ $emails['adapt'] }}</td>
   </tr>
   <tr>
     <td><b>Total</b></td>

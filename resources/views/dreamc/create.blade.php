@@ -639,57 +639,53 @@
         </label>
         <div id="spouseRelated" style="display: none;">
           <div class="form-check">             
-            <input  class="form-check-input" type=checkbox name=ckb value=5 onclick='chkcontrol(1)';>
+            <input  class="form-check-input" type=checkbox name="ckb[]" value=5 onclick='chkcontrol(1)';>
           <label class="form-check-label">
             Your spouse or partner’s language level
           </label>
           </div>
           <div class="form-check">             
-            <input  class="form-check-input" type=checkbox name=ckb value=5 onclick='chkcontrol(2)';>
+            <input  class="form-check-input" type=checkbox name="ckb[]" value=5 onclick='chkcontrol(2)';>
           <label class="form-check-label">
             Your spouse or partner’s past studies in Canada
           </label>
           </div>
           <div class="form-check">             
-            <input  class="form-check-input" type=checkbox name=ckb value=5 onclick='chkcontrol(3)';>
+            <input  class="form-check-input" type=checkbox name="ckb[]" value=5 onclick='chkcontrol(3)';>
             <label class="form-check-label">
               Your spouse or common-law partner’s past work in Canada
             </label>
           </div>
         </div>
         <div class="form-check">              
-          <input  class="form-check-input" type=checkbox name=ckb value=10 onclick='chkcontrol(4)';>
+          <input  class="form-check-input" type=checkbox name="ckb[]" value=10 onclick='chkcontrol(4)';>
         <label class="form-check-label">
           Your past studies in Canada
         </label>
           </div>
         <div class="form-check">             
-          <input  class="form-check-input" type=checkbox name=ckb value=5 onclick='chkcontrol(5)';>
+          <input  class="form-check-input" type=checkbox name="ckb[]" value=5 onclick='chkcontrol(5)';>
         <label class="form-check-label">
           Your past work in Canada
         </label>
           </div>
         <div class="form-check">          
-          <input  class="form-check-input" type=checkbox name=ckb value=5 onclick='chkcontrol(6)';>
+          <input  class="form-check-input" type=checkbox name="ckb[]" value=5 onclick='chkcontrol(6)';>
         <label class="form-check-label">
           Arranged employment in Canada
         </label>
           </div>
         <div class="form-check">   
-          <input  class="form-check-input" type=checkbox name=ckb value=5 onclick='chkcontrol(7)';
+          <input  class="form-check-input" type=checkbox name="ckb[]" value=5 onclick='chkcontrol(7)';
           <label class="form-check-label">
             Relatives in Canada
           </label>
         </div>  
-      </div> 
+      </div>
 
       <hr class="my-4">
 
-      <!-- <input type="submit" name="submit" class="btn btn-primary mt-2" >  -->
-
-      <button class="btn btn-primary mt-2" id="submitBtn" name="submit" type="submit">
-        Submit
-      </button>
+      <input type="submit" name="submit" class="btn btn-primary mt-2" > 
 
 
 
