@@ -119,13 +119,16 @@ class DreamcController extends Controller{
             $clb+=$clb2;       
         }
 
-        $ckb = request('ckb');
-        $adaptability=array_sum($ckb);
-        error_log($adaptability);
-        $adaptability = ($adaptability > 10) ? 10 : $adaptability;
-        error_log($adaptability);
+        // $ckb = request('ckb');
+        // $adaptability=array_sum($ckb);
+        // error_log($adaptability);
+        // $adaptability = ($adaptability > 10) ? 10 : $adaptability;
+        // error_log($adaptability);
 
-        $total = $a + $clb + request('workexp') + request('education') + $adaptability;
+        $sumAdaptability = request('sumAdaptability');
+        error_log($sumAdaptability);
+
+        $total = $a + $clb + request('workexp') + request('education') + $sumAdaptability;
 
         // Work remains
         $frstL = request('firstlang');
@@ -138,7 +141,7 @@ class DreamcController extends Controller{
             'workexp' => request('workexp'),
             'education' => request('education'),
             'clb' => $clb,
-            'adapt' => $adaptability,
+            'adapt' => $sumAdaptability,
             'total' => $total
         );
 
