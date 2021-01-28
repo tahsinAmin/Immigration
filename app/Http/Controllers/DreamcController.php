@@ -117,6 +117,34 @@ class DreamcController extends Controller{
                 $clb2 = 0;
             }
             $clb+=$clb2;       
+        }else if($examstyle == "tef"){
+            $speaking = request('tSpeaking1');
+            $listening = request('tListening1');
+            $reading = request('tReading1');
+            $writing = request('tWriting1');
+
+            if(($speaking>=371 && $speaking<=392) && ($writing>=371 && $writing<=392) && ($listening>=298 && $listening<=315) && ($reading>=248 && $reading<=262)){
+                $clb = 24;
+            } else if(($speaking>=349 && $speaking<=370) && ($writing>=349 && $writing<=370) && ($listening>=280 && $listening<=297) && ($reading>=233 && $reading<=247)){
+                $clb = 20;
+            } else if(($speaking>=310 && $speaking<=348) && ($writing>=310 && $writing<=348) && ($listening>=249 && $listening<=279) && ($reading>=207 && $reading<=232)){
+                $clb = 16;
+            } else if(($speaking>=271 && $speaking<=309) && ($writing>=271 && $writing<=309) && ($listening>=217 && $listening<=248) && ($reading>=181 && $reading<=206)){
+
+            } else if(($speaking>=226 && $speaking<=270) && ($writing>=226 && $writing<=270) && ($listening>=181 && $listening<=216) && ($reading>=151 && $reading<=180)){
+
+            } else{
+                error_log("Not eligible to apply");
+            }
+
+            $speaking = request('tSpeaking2');
+            $listening = request('tListening2');
+            $reading = request('tReading2');
+            $writing = request('tWriting2');
+            $clb2 = 0;
+            if($speaking>=226 && $writing>=226 && $listening>=181 && $reading>=151){ $clb2 = 4; }
+
+            $clb+=$clb2;       
         }
 
         // $ckb = request('ckb');

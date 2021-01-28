@@ -434,7 +434,7 @@
         </div>
       </div>
 
-      <!-- <div id="tefSwitch" style="display: none">
+      <div id="tefSwitch" style="display: none">
         <h4>
           First Official Language
           <select class="form-select" id="tFirstLang" name="tFirstLang" onchange="show3();">
@@ -539,95 +539,29 @@
           <span id="iLangChange"></span>
         </h4>
         <div class="row g-3">
+
           <div class="col-md-3">
-            <label for="iSpeaking2" class="form-label">Speaking</label>
-            <select class="form-select" id="iSpeaking2" name="iSpeaking2" required>
-              <option value="0">Choose...</option>
-              <option value=9 >9</option>
-              <option value=8.5 >8.5</option>
-              <option value=8 >8</option>
-              <option value=7.5 >7.5</option>
-              <option value=7 >7</option>
-              <option value=6.5 >6.5</option>
-              <option value=6 >6</option>
-              <option value=5.5 >5.5</option>
-              <option value=5 >5</option>
-              <option value=4.5 >4.5</option>
-              <option value=4 >4</option>
-              <option value=3.5 >3.5</option>
-              <option value=3 >3</option>
-              <option value=2.5 >2.5</option>
-              <option value=2 >2</option>           
-            </select>
+            <label for="tSpeaking2" class="form-label">Speaking</label>
+            <input type="number" name="tSpeaking2" class="form-control" id="tSpeaking2" placeholder="Enter a number" required>
           </div>
 
           <div class="col-md-3">
-            <label for="iListening2" class="form-label">Listening</label>
-              <select class="form-select" id="iListening2" name="iListening2" required>
-              <option value="0">Choose...</option>
-              <option value=9 >9</option>
-              <option value=8.5 >8.5</option>
-              <option value=8 >8</option>
-              <option value=7.5 >7.5</option>
-              <option value=7 >7</option>
-              <option value=6.5 >6.5</option>
-              <option value=6 >6</option>
-              <option value=5.5 >5.5</option>
-              <option value=5 >5</option>
-              <option value=4.5 >4.5</option>
-              <option value=4 >4</option>
-              <option value=3.5 >3.5</option>
-              <option value=3 >3</option>
-              <option value=2.5 >2.5</option>
-              <option value=2 >2</option>           
-            </select>
-          </div> 
-
-          <div class="col-md-3">
-            <label for="iReading2" class="form-label">Reading</label>
-            <select class="form-select" id="iReading2" name="iReading2" required>
-              <option value="0">Choose...</option>
-              <option value=9 >9</option>
-              <option value=8.5 >8.5</option>
-              <option value=8 >8</option>
-              <option value=7.5 >7.5</option>
-              <option value=7 >7</option>
-              <option value=6.5 >6.5</option>
-              <option value=6 >6</option>
-              <option value=5.5 >5.5</option>
-              <option value=5 >5</option>
-              <option value=4.5 >4.5</option>
-              <option value=4 >4</option>
-              <option value=3.5 >3.5</option>
-              <option value=3 >3</option>
-              <option value=2.5 >2.5</option>
-              <option value=2 >2</option>           
-            </select>
+            <label for="tListening2" class="form-label">Listening</label>
+            <input type="number" name="tListening2" class="form-control" id="tListening2" placeholder="Enter a number" required>
           </div>
 
           <div class="col-md-3">
-            <label for="iWriting2" class="form-label">Writing</label>
-            <select class="form-select" id="iWriting2" name="iWriting2" required>
-              <option value="0">Choose...</option>
-              <option value=9 >9</option>
-              <option value=8.5 >8.5</option>
-              <option value=8 >8</option>
-              <option value=7.5 >7.5</option>
-              <option value=7 >7</option>
-              <option value=6.5 >6.5</option>
-              <option value=6 >6</option>
-              <option value=5.5 >5.5</option>
-              <option value=5 >5</option>
-              <option value=4.5 >4.5</option>
-              <option value=4 >4</option>
-              <option value=3.5 >3.5</option>
-              <option value=3 >3</option>
-              <option value=2.5 >2.5</option>
-              <option value=2 >2</option>           
-            </select>
+            <label for="tReading2" class="form-label">Reading</label>
+            <input type="number" name="tReading2" class="form-control" id="tReading2" placeholder="Enter a number" required>
           </div>
+
+          <div class="col-md-3">
+            <label for="tWriting2" class="form-label">Writing</label>
+            <input type="number" name="tWriting2" class="form-control" id="tWriting2" placeholder="Enter a number" required>
+          </div>
+
         </div>
-      </div> -->
+      </div>
 
       <hr class="my-4">
 
