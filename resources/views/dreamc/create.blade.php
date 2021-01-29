@@ -103,7 +103,7 @@
             <option value="">Choose...</option>
             <option value="celpip">CELPIP</option>
             <option value="ielts">IELTS</option>
-            <!-- <option value="tef">TEF</option> -->
+            <option value="tef">TEF</option>
         </select>
       </h4>
 
@@ -446,97 +446,30 @@
         <div class="row g-3">
 
           <div class="col-md-3">
-            <label for="iSpeaking1" class="form-label">Speaking</label>
-            <select class="form-select" id="iSpeaking1" name="iSpeaking1" required>
-              <option value="0">Choose...</option>
-              <option value=9 >9</option>
-              <option value=8.5 >8.5</option>
-              <option value=8 >8</option>
-              <option value=7.5 >7.5</option>
-              <option value=7 >7</option>
-              <option value=6.5 >6.5</option>
-              <option value=6 >6</option>
-              <option value=5.5 >5.5</option>
-              <option value=5 >5</option>
-              <option value=4.5 >4.5</option>
-              <option value=4 >4</option>
-              <option value=3.5 >3.5</option>
-              <option value=3 >3</option>
-              <option value=2.5 >2.5</option>
-              <option value=2 >2</option>           
-            </select>
+            <label for="tSpeaking1" class="form-label">Speaking</label>
+            <input type="number" name="tSpeaking1" class="form-control" id="tSpeaking1" placeholder="Enter a number" required>
           </div>
 
           <div class="col-md-3">
-            <label for="iListening1" class="form-label">Listening</label>
-              <select class="form-select" id="iListening1" name="iListening1" required>
-              <option value="0">Choose...</option>
-              <option value=9 >9</option>
-              <option value=8.5 >8.5</option>
-              <option value=8 >8</option>
-              <option value=7.5 >7.5</option>
-              <option value=7 >7</option>
-              <option value=6.5 >6.5</option>
-              <option value=6 >6</option>
-              <option value=5.5 >5.5</option>
-              <option value=5 >5</option>
-              <option value=4.5 >4.5</option>
-              <option value=4 >4</option>
-              <option value=3.5 >3.5</option>
-              <option value=3 >3</option>
-              <option value=2.5 >2.5</option>
-              <option value=2 >2</option>           
-            </select>
-          </div> 
-
-          <div class="col-md-3">
-            <label for="iReading1" class="form-label">Reading</label>
-            <select class="form-select" id="iReading1" name="iReading1" required>
-              <option value="0">Choose...</option>
-              <option value=9 >9</option>
-              <option value=8.5 >8.5</option>
-              <option value=8 >8</option>
-              <option value=7.5 >7.5</option>
-              <option value=7 >7</option>
-              <option value=6.5 >6.5</option>
-              <option value=6 >6</option>
-              <option value=5.5 >5.5</option>
-              <option value=5 >5</option>
-              <option value=4.5 >4.5</option>
-              <option value=4 >4</option>
-              <option value=3.5 >3.5</option>
-              <option value=3 >3</option>
-              <option value=2.5 >2.5</option>
-              <option value=2 >2</option>           
-            </select>
+            <label for="tListening1" class="form-label">Listening</label>
+            <input type="number" name="tListening1" class="form-control" id="tListening1" placeholder="Enter a number" required>
           </div>
 
           <div class="col-md-3">
-            <label for="iWriting1" class="form-label">Writing</label>
-            <select class="form-select" id="iWriting1" name="iWriting1" required>
-            <option value="0">Choose...</option>
-              <option value=9 >9</option>
-              <option value=8.5 >8.5</option>
-              <option value=8 >8</option>
-              <option value=7.5 >7.5</option>
-              <option value=7 >7</option>
-              <option value=6.5 >6.5</option>
-              <option value=6 >6</option>
-              <option value=5.5 >5.5</option>
-              <option value=5 >5</option>
-              <option value=4.5 >4.5</option>
-              <option value=4 >4</option>
-              <option value=3.5 >3.5</option>
-              <option value=3 >3</option>
-              <option value=2.5 >2.5</option>
-              <option value=2 >2</option>           
-            </select>
+            <label for="tReading1" class="form-label">Reading</label>
+            <input type="number" name="tReading1" class="form-control" id="tReading1" placeholder="Enter a number" required>
           </div>
+
+          <div class="col-md-3">
+            <label for="tWriting1" class="form-label">Writing</label>
+            <input type="number" name="tWriting1" class="form-control" id="tWriting1" placeholder="Enter a number" required>
+          </div>
+
         </div>
 
         <h4 class="my-4">
           Second Official Language
-          <span id="iLangChange"></span>
+          <span id="tLangChange"></span>
         </h4>
         <div class="row g-3">
 
@@ -632,26 +565,26 @@
       var examstyle = document.myForm.examstyle.value;
       var celpipSwitch = document.getElementById("celpipSwitch");
       var ieltsSwitch = document.getElementById("ieltsSwitch");
-      // var tefSwitch = document.getElementById("tefSwitch");
+      var tefSwitch = document.getElementById("tefSwitch");
 
       if(examstyle == "celpip"){
         console.log("CELPIP");
         celpipSwitch.style.display = "block";
         ieltsSwitch.style.display = "none";
-        // tefSwitch.style.display = "none";
+        tefSwitch.style.display = "none";
       }else if(examstyle == "ielts"){ 
         console.log("IELTS");
         ieltsSwitch.style.display = "block";
         celpipSwitch.style.display = "none";
-        // tefSwitch.style.display = "none";
+        tefSwitch.style.display = "none";
       }else if(examstyle == "tef"){ 
         celpipSwitch.style.display = "none";
         ieltsSwitch.style.display = "none";
-        // tefSwitch.style.display = "block";
+        tefSwitch.style.display = "block";
       }else{
         celpipSwitch.style.display = "none";
         ieltsSwitch.style.display = "none";
-        // tefSwitch.style.display = "none";
+        tefSwitch.style.display = "none";
       }
     }
 
@@ -678,6 +611,19 @@
           iS.innerHTML = "(English)";
         }else{
           iS.innerHTML = "";
+        }
+    }
+
+    function show3(){
+        var tF= document.myForm.tFirstLang.value;
+        console.log(tF);
+        var tS = document.getElementById("tLangChange");
+        if(tF == "eng"){
+          tS.innerHTML = "(French)";
+        }else if (tF == "fr"){
+          tS.innerHTML = "(English)";
+        }else{
+          tS.innerHTML = "";
         }
     }
 
