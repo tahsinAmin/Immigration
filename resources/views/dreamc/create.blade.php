@@ -447,22 +447,22 @@
 
           <div class="col-md-3">
             <label for="tSpeaking1" class="form-label">Speaking</label>
-            <input type="number" name="tSpeaking1" class="form-control" id="tSpeaking1" placeholder="Enter a number" required>
+            <input type="number" name="tSpeaking1" class="form-control" id="tSpeaking1" value=0 placeholder="Enter a number" required>
           </div>
 
           <div class="col-md-3">
             <label for="tListening1" class="form-label">Listening</label>
-            <input type="number" name="tListening1" class="form-control" id="tListening1" placeholder="Enter a number" required>
+            <input type="number" name="tListening1" class="form-control" id="tListening1" value=0 placeholder="Enter a number" required>
           </div>
 
           <div class="col-md-3">
             <label for="tReading1" class="form-label">Reading</label>
-            <input type="number" name="tReading1" class="form-control" id="tReading1" placeholder="Enter a number" required>
+            <input type="number" name="tReading1" class="form-control" id="tReading1" value=0 placeholder="Enter a number" required>
           </div>
 
           <div class="col-md-3">
             <label for="tWriting1" class="form-label">Writing</label>
-            <input type="number" name="tWriting1" class="form-control" id="tWriting1" placeholder="Enter a number" required>
+            <input type="number" name="tWriting1" class="form-control" id="tWriting1" value=0 placeholder="Enter a number" required>
           </div>
 
         </div>
@@ -475,22 +475,22 @@
 
           <div class="col-md-3">
             <label for="tSpeaking2" class="form-label">Speaking</label>
-            <input type="number" name="tSpeaking2" class="form-control" id="tSpeaking2" placeholder="Enter a number" required>
+            <input type="number" name="tSpeaking2" class="form-control" id="tSpeaking2" value=0 placeholder="Enter a number" required>
           </div>
 
           <div class="col-md-3">
             <label for="tListening2" class="form-label">Listening</label>
-            <input type="number" name="tListening2" class="form-control" id="tListening2" placeholder="Enter a number" required>
+            <input type="number" name="tListening2" class="form-control" id="tListening2" value=0 placeholder="Enter a number" required>
           </div>
 
           <div class="col-md-3">
             <label for="tReading2" class="form-label">Reading</label>
-            <input type="number" name="tReading2" class="form-control" id="tReading2" placeholder="Enter a number" required>
+            <input type="number" name="tReading2" class="form-control" id="tReading2" value=0 placeholder="Enter a number" required>
           </div>
 
           <div class="col-md-3">
             <label for="tWriting2" class="form-label">Writing</label>
-            <input type="number" name="tWriting2" class="form-control" id="tWriting2" placeholder="Enter a number" required>
+            <input type="number" name="tWriting2" class="form-control" id="tWriting2" value=0 placeholder="Enter a number" required>
           </div>
 
         </div>
@@ -574,8 +574,8 @@
         tefSwitch.style.display = "none";
       }else if(examstyle == "ielts"){ 
         console.log("IELTS");
-        ieltsSwitch.style.display = "block";
         celpipSwitch.style.display = "none";
+        ieltsSwitch.style.display = "block";
         tefSwitch.style.display = "none";
       }else if(examstyle == "tef"){ 
         celpipSwitch.style.display = "none";

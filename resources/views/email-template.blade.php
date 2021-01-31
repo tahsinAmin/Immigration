@@ -1,37 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
-<title>Send Email in Laravel 8 Using Gmail SMTP | Programming Fields</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <style>
-      table {
-        width:100%;
-      }
-      table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-      }
-      th, td {
-        padding: 15px;
-        text-align: left;
-      }
-      #t01 tr:nth-child(even) {
-        background-color: #eee;
-      }
-      #t01 tr:nth-child(odd) {
-      background-color: #fff;
-      }
-      #t01 th {
-        background-color: black;
-        color: white;
-      }
-    </style>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Send Email in Laravel 8 Using Gmail SMTP | Programming Fields</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Montserrat&display=swap" rel="stylesheet">
+  <style>
+    table {
+      width:100%;
+    }
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 15px;
+      text-align: left;
+    }
+    #t01 tr:nth-child(even) {
+      background-color: #eee;
+    }
+    #t01 tr:nth-child(odd) {
+    background-color: #fff;
+    }
+    #t01 th {
+      background-color: black;
+      color: white;
+    }
+  </style>
 </head>
 <body>
 
-<h2>DreamC</h2>
+  <div>
+      <h2 style="font-family: 'Montserrat', sans-serif;color: red;"><b>Dream</b></h2>
+      <h2 style="font-family: 'Caveat', cursive;position: relative;
+      color: black;
+      top: -37px;">Big</h2>
+   </div>
 
 <table id="t01">
   <tr>
