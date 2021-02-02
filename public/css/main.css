@@ -98,6 +98,25 @@ footer{
   text-decoration: none;
 }
 
+
+.part3{
+  display: grid;
+  grid-template-columns: 32% repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 4%;
+}
+
+.p3Img{
+  height: 170px;
+}
+
+.p3b{
+  font-size: 12px;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
 @media screen and (max-width: 320px) {
   nav{
     height: 55px;
@@ -109,6 +128,12 @@ footer{
     height: 49px;
     font-size: 15px;
     padding: 0 6px;
+  }
+
+  .part3{
+    grid-template-columns: 48% repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 2%;
   }
 
 }

@@ -99,18 +99,182 @@
         <article class="blog-post">
           <h2 class="blog-post-title">Explore Provinces</h2>
           <div class="row mb-2 mt-2">
-            <div class="col-md-4">Hello</div>
-            <div class="col-md-4">Hello</div>
-            <div class="col-md-4">Hello</div>
+            <div class="col-md-3 border offset-md-1">Hello</div>
+            <div class="col-md-3 border offset-md-1">Hello</div>
+            <div class="col-md-3 border offset-md-1">Hello</div>
           </div>
 
-          <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
-          <hr>
-          <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-          <blockquote>
-            <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-          </blockquote>
-          <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+          <div class="part3 mb-2 mt-2">
+            <div class="p3a">
+                <img src="mayne.jpg" class="p3Img" alt="">
+                <div class="marg">
+                    <div class="p3b">
+                        <div>
+                            <span class="super prime">PLUS</span>
+                            <span class="middle">Mayne Island</span>
+                        </div>
+                        <span class="right"><i class="fas fa-star" style="color: #8e1ea1;"></i>4.97</span>
+                    </div>
+                </div>
+            </div>
+            <div class="p3a">
+                <img src="mayne.jpg" class="p3Img" alt="">
+                <div class="marg">
+                    <div class="p3b">
+                        <div>
+                            <span class="super prime">PLUS</span>
+                            <span class="middle">Mayne Island</span>
+                        </div>
+
+                        <span class="right"><i class="fas fa-star" style="color: #8e1ea1;"></i>4.97</span>
+                    </div>
+                </div>
+            </div>
+            <div class="p3a">
+                <img src="mayne.jpg" class="p3Img" alt="">
+                <div class="marg">
+                    <div class="p3b">
+                        <div>
+                            <span class="super prime">PLUS</span>
+                            <span class="middle">Mayne Island</span>
+                        </div>
+
+                        <span class="right"><i class="fas fa-star" style="color: #8e1ea1;"></i>4.97</span>
+                    </div>
+                </div>
+            </div>
+            <div class="p3a">
+                <img src="mayne.jpg" class="p3Img" alt="">
+                <div class="marg">
+                    <div class="p3b">
+                        <div>
+                            <span class="super prime">PLUS</span>
+                            <span class="middle">Mayne Island</span>
+                        </div>
+
+                        <span class="right"><i class="fas fa-star" style="color: #8e1ea1;"></i>4.97</span>
+                    </div>
+                </div>
+            </div>
+            <div class="p3a">
+                <img src="mayne.jpg" class="p3Img" alt="">
+                <div class="marg">
+                    <div class="p3b">
+                        <div>
+                            <span class="super prime">PLUS</span>
+                            <span class="middle">Mayne Island</span>
+                        </div>
+
+                        <span class="right"><i class="fas fa-star" style="color: #8e1ea1;"></i>4.97</span>
+                    </div>
+                </div>
+            </div>
+            <div class="p3a">
+                <img src="mayne.jpg" class="p3Img" alt="">
+                <div class="marg">
+                    <div class="p3b">
+                        <div>
+                            <span class="super prime">PLUS</span>
+                            <span class="middle">Mayne Island</span>
+                        </div>
+
+                        <span class="right"><i class="fas fa-star" style="color: #8e1ea1;"></i>4.97</span>
+                    </div>
+                </div>
+            </div>
+            <div class="p3a">
+                <img src="lala.jpg" class="p3Img" alt="">
+                <div class="marg">
+                    <div class="p3b">
+                        <div>
+                            <span class="super">SUPERHOST</span>
+                            <span class="middle">La Habana</span>
+                        </div>
+
+                        <span class="right"><i class="fas fa-star" style="color: red;"></i>4.87</span>
+                    </div>
+                </div>
+            </div>
+            <div class="p3a">
+                <img src="medina.jpg" class="p3Img" alt="">
+                <div class="marg">
+                    <div class="p3b">
+                        <div>
+                            <span class="super">SUPERHOST</span>
+                            <span class="middle">Medina . Marakesh</span>
+                        </div>
+
+                        <span class="right"><i class="fas fa-star" style="color: red;"></i>4.89</span>
+                    </div>
+                </div>
+            </div>
+            <div class="p3a">
+                <img src="mount.jpg" class="p3Img" alt="">
+                <div class="marg">
+                    <div class="p3b">
+                        <div>
+                            <span class="super">SUPERHOST</span>
+                            <span class="middle">Mount Nathan</span>
+                        </div>
+
+                        <span class="right"><i class="fas fa-star" style="color: red;"></i>4.90</span>
+                    </div>
+                </div>
+            </div>
+            <div class="p3a">
+                <img src="joshua.jpg" class="p3Img" alt="">
+                <div class="marg">
+                    <div class="p3b">
+                        <div>
+                            <span class="super">SUPERHOST</span>
+                            <span class="middle">Joshua Tree</span>
+                        </div>
+
+                        <span class="right"><i class="fas fa-star" style="color: red;"></i>4.92</span>
+                    </div>
+                </div>
+            </div>
+            <div class="p3a">
+                <img src="bali.jpg" class="p3Img" alt="">
+                <div class="marg">
+                    <div class="p3b">
+                        <div>
+                            <span class="super">SUPERHOST</span>
+                            <span class="middle">Balie . Singaraja</span>
+                        </div>
+
+                        <span class="right"><i class="fas fa-star" style="color: red;"></i>4.90</span>
+                    </div>
+                </div>
+            </div>
+            <div class="p3a">
+                <img src="sechelt.jpg" class="p3Img" alt="">
+                <div class="marg">
+                    <div class="p3b">
+                        <div>
+                            <span class="super">SUPERHOST</span>
+                            <span class="middle">Sechelt</span>
+                        </div>
+
+                        <span class="right"><i class="fas fa-star" style="color: red;"></i>4.97</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="p3a">
+                    <img src="fujida.jpg" class="p3Img" alt="">
+                    <div class="marg">
+                        <div class="p3b">
+                            <div>
+                                <span class="super">SUPERHOST</span>
+                                <span class="middle">Fujieda</span>
+                            </div>
+
+                            <span class="right"><i class="fas fa-star" style="color: red;"></i>4.78</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
           <h2>Heading</h2>
           <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
           <h3>Sub-heading</h3>
