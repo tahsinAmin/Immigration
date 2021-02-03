@@ -97,16 +97,11 @@
         </h3>
 
         <article class="blog-post">
-          <h2 class="blog-post-title">Explore Provinces</h2>
-          <div class="row mb-2 mt-2">
-            <div class="col-md-3 border offset-md-1">Hello</div>
-            <div class="col-md-3 border offset-md-1">Hello</div>
-            <div class="col-md-3 border offset-md-1">Hello</div>
-          </div>
+          <h2 class="blog-post-title">(Change the later divs of provinces)Explore Provinces</h2>
 
           <div class="part3 mb-2 mt-2">
             <div class="p3a">
-                <img src="mayne.jpg" class="p3Img" alt="">
+                <div class="provinces"></div>
                 <div class="marg">
                     <div class="p3b">
                         <div>
@@ -118,20 +113,7 @@
                 </div>
             </div>
             <div class="p3a">
-                <img src="mayne.jpg" class="p3Img" alt="">
-                <div class="marg">
-                    <div class="p3b">
-                        <div>
-                            <span class="super prime">PLUS</span>
-                            <span class="middle">Mayne Island</span>
-                        </div>
-
-                        <span class="right"><i class="fas fa-star" style="color: #8e1ea1;"></i>4.97</span>
-                    </div>
-                </div>
-            </div>
-            <div class="p3a">
-                <img src="mayne.jpg" class="p3Img" alt="">
+            <div class="provinces"></div>
                 <div class="marg">
                     <div class="p3b">
                         <div>
@@ -144,7 +126,20 @@
                 </div>
             </div>
             <div class="p3a">
-                <img src="mayne.jpg" class="p3Img" alt="">
+              <div class="provinces"></div>
+              <div class="marg">
+                    <div class="p3b">
+                        <div>
+                            <span class="super prime">PLUS</span>
+                            <span class="middle">Mayne Island</span>
+                        </div>
+
+                        <span class="right"><i class="fas fa-star" style="color: #8e1ea1;"></i>4.97</span>
+                    </div>
+                </div>
+            </div>
+            <div class="p3a">
+                <div class="provinces"></div>
                 <div class="marg">
                     <div class="p3b">
                         <div>
@@ -157,7 +152,7 @@
                 </div>
             </div>
             <div class="p3a">
-                <img src="mayne.jpg" class="p3Img" alt="">
+                <div class="provinces"></div>
                 <div class="marg">
                     <div class="p3b">
                         <div>
@@ -170,7 +165,7 @@
                 </div>
             </div>
             <div class="p3a">
-                <img src="mayne.jpg" class="p3Img" alt="">
+                <div class="provinces"></div>
                 <div class="marg">
                     <div class="p3b">
                         <div>
@@ -183,7 +178,7 @@
                 </div>
             </div>
             <div class="p3a">
-                <img src="lala.jpg" class="p3Img" alt="">
+                <div class="provinces"></div>
                 <div class="marg">
                     <div class="p3b">
                         <div>
@@ -196,7 +191,7 @@
                 </div>
             </div>
             <div class="p3a">
-                <img src="medina.jpg" class="p3Img" alt="">
+                <div class="provinces"></div>
                 <div class="marg">
                     <div class="p3b">
                         <div>
@@ -209,7 +204,7 @@
                 </div>
             </div>
             <div class="p3a">
-                <img src="mount.jpg" class="p3Img" alt="">
+                <div class="provinces"></div>
                 <div class="marg">
                     <div class="p3b">
                         <div>
@@ -222,7 +217,7 @@
                 </div>
             </div>
             <div class="p3a">
-                <img src="joshua.jpg" class="p3Img" alt="">
+                <div class="provinces"></div>
                 <div class="marg">
                     <div class="p3b">
                         <div>
@@ -235,7 +230,7 @@
                 </div>
             </div>
             <div class="p3a">
-                <img src="bali.jpg" class="p3Img" alt="">
+                <div class="provinces"></div>
                 <div class="marg">
                     <div class="p3b">
                         <div>
@@ -248,7 +243,7 @@
                 </div>
             </div>
             <div class="p3a">
-                <img src="sechelt.jpg" class="p3Img" alt="">
+                <div class="provinces"></div>
                 <div class="marg">
                     <div class="p3b">
                         <div>
@@ -261,7 +256,7 @@
                   </div>
                 </div>
                 <div class="p3a">
-                    <img src="fujida.jpg" class="p3Img" alt="">
+                    <div class="provinces"></div>
                     <div class="marg">
                         <div class="p3b">
                             <div>

@@ -39,7 +39,7 @@
 
 
       <div class="form-group mt-4">
-          <h4>Education</h4>
+          <h4>Highest Level of Education You've Completed</h4>
           <div class="form-check">
             <input id="phd" name="education" type="radio" class="form-check-input" value=25 required>
             <label class="form-check-label" for="phd">PhD</label>
