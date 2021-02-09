@@ -121,6 +121,73 @@ footer{
   background-image: url('/img/lake.jpg');
   height: 142px;
   background-size: cover;
+ 
+}
+
+.form-img{
+  height: 450px;
+}
+
+/* feature */
+
+.feature-box{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* text-align: center; */
+}
+.features{
+  flex-basis: 50%;
+}
+.features-img{
+  flex-basis: 50%;
+  margin: auto;
+}
+.features-img img{
+  width: 70%;
+  border-radius: 10px;
+}
+.features h1{
+  text-align: left;
+  margin-bottom: 10px;
+  color: #c73030;
+  font-size: 47px;
+  letter-spacing: 3px;
+}
+
+.features-desc{
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.feature-text p{
+  /* padding: 0 20px; */
+  text-align: initial;
+  font-size: 21px;
+}
+
+.row h1{
+  letter-spacing: 2px;
+  font-size: 60px;
+}
+
+                  
+
+@media screen and (max-width: 768px) {
+  .features{
+      flex-basis: 100%;
+      color: cadetblue;
+  }
+  .features-img{
+      flex-basis: 100%;
+  }
+  .features-img img{
+      width: 100%;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -143,3 +210,4 @@ footer{
   }
 
 }
+

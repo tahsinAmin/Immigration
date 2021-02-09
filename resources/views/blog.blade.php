@@ -81,14 +81,31 @@
       </div>
 
 
-    <div class="row mb-2">
-      <h1>Take Our Asessment</h1>
-      <p>By responding to a few question, we can let you know your chances of passing the total screening process for immigration.</p>
-      <a class="btn btn-outline-secondary free-btn" href="http://127.0.0.1:8000/dreamc/create">
-        <i class="fas fa-chevron-circle-right" ></i>
-        Free Assessment
-       </a>
+    <div class="row mb-2 d-flex justify-content-center">
+
+    <div class="col-md-9 m-auto">
+      <div class="row">
+                <div class="col-md-6 col-sm-12 py-4 text-left text-sm-center">
+                  <h1>Take Our Asessment</h1>
+                  <p style="
+                      font-size: 24px;
+                      line-height: 1.5;
+                  ">By filling our assessment, we will let you know your chances of passing the immigration screening process.</p>
+                  <a class="btn btn-outline-secondary free-btn" href="http://127.0.0.1:8000/dreamc/create" style="
+                      height: 57px;
+                      width: 315px;
+                      font-size: 26px;
+                  ">
+                    <i class="fas fa-chevron-circle-right" aria-hidden="true"></i>
+                    Free Assessment
+                  </a>
+                </div>
+                <div class="col-md-5 offset-sm-2 col-sm-12  .col-md-5 offset-md-1">
+                  <img src="/img/form2.png" class="form-img" alt="form picture">
+                </div>
+            </div>
     </div>
+  </div>
 
     <div class="row">
       <div class="col-md-8">
