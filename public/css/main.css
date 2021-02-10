@@ -112,9 +112,7 @@ footer{
 
 .p3b{
   font-size: 12px;
-  /* height: 20px; */
   display: flex;
-  /* justify-content: space-between; */
 }
 
 .provinces{
@@ -128,66 +126,40 @@ footer{
   height: 450px;
 }
 
-/* feature */
-
-.feature-box{
-  width: 80%;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  /* text-align: center; */
-}
-.features{
-  flex-basis: 50%;
-}
-.features-img{
-  flex-basis: 50%;
-  margin: auto;
-}
-.features-img img{
-  width: 70%;
-  border-radius: 10px;
-}
-.features h1{
-  text-align: left;
-  margin-bottom: 10px;
-  color: #c73030;
-  font-size: 47px;
-  letter-spacing: 3px;
-}
-
-.features-desc{
-  display: flex;
-  -ms-align-items: center;
-  align-items: center;
-  margin-bottom: 40px;
-}
-
-.feature-text p{
-  /* padding: 0 20px; */
-  text-align: initial;
-  font-size: 21px;
-}
-
-.row h1{
+.assess-section h1{
   letter-spacing: 2px;
-  font-size: 60px;
+  font-size: 4.2rem;
+  margin-bottom: 1.4rem;
+}
+
+.assess-section p{
+  font-size: 1.7rem;
+  line-height: 1.5;
+}
+
+.section-2-content{
+  padding-left: 2.8rem;
+}
+
+.free-btn-big{
+  width: 100%;
+  height: 57px;
+  font-size: 26px;
 }
 
                   
 
 @media screen and (max-width: 768px) {
-  .features{
-      flex-basis: 100%;
-      color: cadetblue;
+  .assess-section h1{
+    letter-spacing: 1px;
+    font-size: 2.2rem;
   }
-  .features-img{
-      flex-basis: 100%;
+
+  .free-btn-big{
+    height: 57px;
+    font-size: 22px;
   }
-  .features-img img{
-      width: 100%;
-  }
+
 }
 
 @media screen and (max-width: 320px) {
@@ -197,10 +169,21 @@ footer{
   .blog-header-logo {
     font-size: 20px;
   }
+
+  .section-2-content {
+    padding: 2px;
+  }
+
   .free-btn {
     height: 49px;
     font-size: 15px;
     padding: 0 6px;
+  }
+
+  .free-btn-big{
+    padding-top: 10px;
+    height: 57px;
+    font-size: 22px;
   }
 
   .part3{
@@ -209,5 +192,20 @@ footer{
     grid-gap: 2%;
   }
 
+  .assess-section h1{
+    font-size: 1.8rem;
+  }
+
+  .assess-section p{
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+
+  .assess-section {
+    text-align: center;
+  }
+
 }
+
+/* asseessmnebt heading and the p[aragaraph should have the the heading size soace in between */
 
