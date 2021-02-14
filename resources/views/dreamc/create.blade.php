@@ -103,7 +103,6 @@
             <option value="">Choose...</option>
             <option value="celpip">CELPIP</option>
             <option value="ielts">IELTS</option>
-            <option value="tef">TEF</option>
         </select>
       </h4>
 
@@ -116,6 +115,9 @@
               <option value="fr">French</option>
           </select>
         </h4>
+      </div>
+
+      <div id="celpipSwitch2" style="display: none">
         <div class="row g-3">
 
           <div class="col-md-3">
@@ -439,8 +441,8 @@
           First Official Language
           <select class="form-select" id="tFirstLang" name="tFirstLang" onchange="show3();">
               <option value="n">Choose...</option>
-                <option value="eng">English</option>
-                <option value="fr">French</option>
+              <option value="eng">English</option>
+              <option value="fr">French</option>
           </select>
         </h4>
         <div class="row g-3">
@@ -499,57 +501,57 @@
       <hr class="my-4">
 
       <div class="form-group mt-4">
-      <h4>Adaptability</h4>
-      <input id="married" onclick="spouseRelatedInfo();" type=checkbox>
-      <label class="form-check-label" for="married">
-        Are you married?
-      </label>
-      <div id="spouseRelated" style="display: none;">
-        <div class="form-check">             
-          <input  class="form-check-input" type=checkbox id="check-1" name="ckb[]" value=5 onclick='chkcontrol(1)';>
-        <label class="form-check-label">
-          Your spouse or partner’s language level
+        <h4>Adaptability</h4>
+        <input id="married" onclick="spouseRelatedInfo();" type=checkbox>
+        <label class="form-check-label" for="married">
+          Are you married?
         </label>
-        </div>
-        <div class="form-check">             
-          <input  class="form-check-input" type=checkbox id="check-2" name="ckb[]" value=5 onclick='chkcontrol(2)';>
-        <label class="form-check-label">
-          Your spouse or partner’s past studies in Canada
-        </label>
-        </div>
-        <div class="form-check">             
-          <input  class="form-check-input" type=checkbox id="check-3" name="ckb[]" value=5 onclick='chkcontrol(3)';>
+        <div id="spouseRelated" style="display: none;">
+          <div class="form-check">             
+            <input  class="form-check-input" type=checkbox id="check-1" name="ckb[]" value=5 onclick='chkcontrol(1)';>
           <label class="form-check-label">
-            Your spouse or common-law partner’s past work in Canada
+            Your spouse or partner’s language level
+          </label>
+          </div>
+          <div class="form-check">             
+            <input  class="form-check-input" type=checkbox id="check-2" name="ckb[]" value=5 onclick='chkcontrol(2)';>
+          <label class="form-check-label">
+            Your spouse or partner’s past studies in Canada
+          </label>
+          </div>
+          <div class="form-check">             
+            <input  class="form-check-input" type=checkbox id="check-3" name="ckb[]" value=5 onclick='chkcontrol(3)';>
+            <label class="form-check-label">
+              Your spouse or common-law partner’s past work in Canada
+            </label>
+          </div>
+        </div>
+        <div class="form-check">              
+          <input  class="form-check-input" type=checkbox id="check-4" name="ckb[]" value=10 onclick='chkcontrol(4)';>
+          <label class="form-check-label">
+            Your past studies in Canada
           </label>
         </div>
-      </div>
-      <div class="form-check">              
-        <input  class="form-check-input" type=checkbox id="check-4" name="ckb[]" value=10 onclick='chkcontrol(4)';>
-      <label class="form-check-label">
-        Your past studies in Canada
-      </label>
-        </div>
-      <div class="form-check">             
-        <input  class="form-check-input" type=checkbox id="check-5" name="ckb[]" value=5 onclick='chkcontrol(5)';>
-      <label class="form-check-label">
-        Your past work in Canada
-      </label>
-        </div>
-      <div class="form-check">          
-        <input  class="form-check-input" type=checkbox id="check-6" name="ckb[]" value=5 onclick='chkcontrol(6)';>
-      <label class="form-check-label">
-        Arranged employment in Canada
-      </label>
-        </div>
-      <div class="form-check">   
-        <input  class="form-check-input" type=checkbox id="check-7" name="ckb[]" value=5 onclick='chkcontrol(7)';
+        <div class="form-check">             
+          <input  class="form-check-input" type=checkbox id="check-5" name="ckb[]" value=5 onclick='chkcontrol(5)';>
         <label class="form-check-label">
-          Relatives in Canada
+          Your past work in Canada
         </label>
+          </div>
+        <div class="form-check">          
+          <input  class="form-check-input" type=checkbox id="check-6" name="ckb[]" value=5 onclick='chkcontrol(6)';>
+        <label class="form-check-label">
+          Arranged employment in Canada
+        </label>
+          </div>
+        <div class="form-check">   
+          <input  class="form-check-input" type=checkbox id="check-7" name="ckb[]" value=5 onclick='chkcontrol(7)';
+          <label class="form-check-label">
+            Relatives in Canada
+          </label>
+        </div>
+        <input type="hidden" id="sumAdaptability" name="sumAdaptability" value="" />
       </div>
-      <input type="hidden" id="sumAdaptability" name="sumAdaptability" value="" />
-    </div>
 
       <hr class="my-4">
 
@@ -564,27 +566,19 @@
     function examFormat(){
       var examstyle = document.myForm.examstyle.value;
       var celpipSwitch = document.getElementById("celpipSwitch");
-      var ieltsSwitch = document.getElementById("ieltsSwitch");
-      var tefSwitch = document.getElementById("tefSwitch");
+      var ieltsSwitch = document.getElementById("ieltsSwitch");     
 
       if(examstyle == "celpip"){
         console.log("CELPIP");
         celpipSwitch.style.display = "block";
         ieltsSwitch.style.display = "none";
-        tefSwitch.style.display = "none";
       }else if(examstyle == "ielts"){ 
         console.log("IELTS");
         celpipSwitch.style.display = "none";
         ieltsSwitch.style.display = "block";
-        tefSwitch.style.display = "none";
-      }else if(examstyle == "tef"){ 
-        celpipSwitch.style.display = "none";
-        ieltsSwitch.style.display = "none";
-        tefSwitch.style.display = "block";
       }else{
         celpipSwitch.style.display = "none";
         ieltsSwitch.style.display = "none";
-        tefSwitch.style.display = "none";
       }
     }
 
@@ -611,19 +605,6 @@
           iS.innerHTML = "(English)";
         }else{
           iS.innerHTML = "";
-        }
-    }
-
-    function show3(){
-        var tF= document.myForm.tFirstLang.value;
-        console.log(tF);
-        var tS = document.getElementById("tLangChange");
-        if(tF == "eng"){
-          tS.innerHTML = "(French)";
-        }else if (tF == "fr"){
-          tS.innerHTML = "(English)";
-        }else{
-          tS.innerHTML = "";
         }
     }
 
