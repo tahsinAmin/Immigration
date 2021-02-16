@@ -84,10 +84,12 @@
       <div class="col-md-6 col-sm-12 py-4 section-2-content col-pull-6">
         <h1>Take Our Asessment</h1>
         <p>By filling our assessment, we will let you know your chances of passing the immigration screening process.</p>
-        <a class="btn btn-outline-secondary free-btn free-btn-big" href="http://127.0.0.1:8000/dreamc/create">
-          <i class="fas fa-chevron-circle-right" aria-hidden="true"></i>
-          Free Assessment
-        </a>
+        <div class="d-grid">
+          <a class="btn free-btn btn-l fs-5" href="http://127.0.0.1:8000/dreamc/create">
+              <i class="fas fa-chevron-circle-right" aria-hidden="true"></i>
+                Free Assessment
+          </a>
+        </div>
       </div>
       <div class="col-md-5 offset-sm-2 col-sm-12  .col-md-5 offset-md-1 col-push-5">
         <img src="/img/form2.png" class="form-img img-responsive" alt="form picture" style="
