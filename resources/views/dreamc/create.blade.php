@@ -115,91 +115,15 @@
               <option value="fr">French</option>
           </select>
         </h4>
-      </div>
 
-      <div id="celpipSwitch2" style="display: none">
-        <div class="row g-3">
 
-          <div class="col-md-3">
-            <label for="cSpeaking1" class="form-label">Speaking</label>
-            <select class="form-select" id="cSpeaking1" name="cSpeaking1" required>
-              <option value="0">Choose...</option>
-              <option value=10>10</option>
-              <option value=9 >9</option>
-              <option value=8 >8</option>
-              <option value=7 >7</option>
-              <option value=6 >6</option>
-              <option value=5 >5</option>
-              <option value=4 >4</option>       
-            </select>
-          </div>
 
-          <div class="col-md-3">
-            <label for="cListening1" class="form-label">Listening</label>
-              <select class="form-select" id="cListening1" name="cListening1" required>
-              <option value="0">Choose...</option>
-              <option value=10>10</option>
-              <option value=9 >9</option>
-              <option value=8 >8</option>
-              <option value=7 >7</option>
-              <option value=6 >6</option>
-              <option value=5 >5</option>
-              <option value=4 >4</option>           
-            </select>
-          </div> 
 
-          <div class="col-md-3">
-            <label for="cReading1" class="form-label">Reading</label>
-            <select class="form-select" id="cReading1" name="cReading1" required>
-              <option value="0">Choose...</option>
-              <option value=10>10</option>
-              <option value=9 >9</option>
-              <option value=8 >8</option>
-              <option value=7 >7</option>
-              <option value=6 >6</option>
-              <option value=5 >5</option>
-              <option value=4 >4</option>           
-            </select>
-          </div>
-
-          <div class="col-md-3">
-            <label for="cWriting1" class="form-label">Writing</label>
-            <select class="form-select" id="cWriting1" name="cWriting1" required>
-              <option value="0">Choose...</option>
-              <option value=10>10</option>
-              <option value=9 >9</option>
-              <option value=8 >8</option>
-              <option value=7 >7</option>
-              <option value=6 >6</option>
-              <option value=5 >5</option>
-              <option value=4 >4</option>              
-            </select>
-          </div>
-        </div>
-
-        <h4 class="my-4">
-          Second Official Language
-          <span id="cLangChange"></span>
-        </h4>
-        <div class="row g-3">
-
-          <div class="col-md-3">
-            <label for="cSpeaking2" class="form-label">Speaking</label>
-            <select class="form-select" id="cSpeaking2" name="cSpeaking2" required>
-              <option value="0">Choose...</option>
-              <option value=10>10</option>
-              <option value=9 >9</option>
-              <option value=8 >8</option>
-              <option value=7 >7</option>
-              <option value=6 >6</option>
-              <option value=5 >5</option>
-              <option value=4 >4</option>            
-            </select>
-          </div>
-
-          <div class="col-md-3">
-            <label for="cListening2" class="form-label">Listening</label>
-              <select class="form-select" id="cListening2" name="cListening2" required>
+        <div id="ifEn" style="display: none">
+          <div class="row g-3">
+            <div class="col-md-3">
+              <label for="cSpeaking1" class="form-label">Speaking</label>
+              <select class="form-select" id="cSpeaking1" name="cSpeaking1" required>
                 <option value="0">Choose...</option>
                 <option value=10>10</option>
                 <option value=9 >9</option>
@@ -207,13 +131,25 @@
                 <option value=7 >7</option>
                 <option value=6 >6</option>
                 <option value=5 >5</option>
-                <option value=4 >4</option>         
+                <option value=4 >4</option>       
               </select>
-          </div> 
-
-          <div class="col-md-3">
-            <label for="cReading2" class="form-label">Reading</label>
-            <select class="form-select" id="cReading2" name="cReading2" required>
+            </div>
+            <div class="col-md-3">
+              <label for="cListening1" class="form-label">Listening</label>
+                <select class="form-select" id="cListening1" name="cListening1" required>
+                  <option value="0">Choose...</option>
+                  <option value=10>10</option>
+                  <option value=9 >9</option>
+                  <option value=8 >8</option>
+                  <option value=7 >7</option>
+                  <option value=6 >6</option>
+                  <option value=5 >5</option>
+                  <option value=4 >4</option>           
+              </select>
+            </div> 
+            <div class="col-md-3">
+              <label for="cReading1" class="form-label">Reading</label>
+              <select class="form-select" id="cReading1" name="cReading1" required>
                 <option value="0">Choose...</option>
                 <option value=10>10</option>
                 <option value=9 >9</option>
@@ -221,13 +157,74 @@
                 <option value=7 >7</option>
                 <option value=6 >6</option>
                 <option value=5 >5</option>
-                <option value=4 >4</option>  
-            </select>
+                <option value=4 >4</option>           
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label for="cWriting1" class="form-label">Writing</label>
+              <select class="form-select" id="cWriting1" name="cWriting1" required>
+                <option value="0">Choose...</option>
+                <option value=10>10</option>
+                <option value=9 >9</option>
+                <option value=8 >8</option>
+                <option value=7 >7</option>
+                <option value=6 >6</option>
+                <option value=5 >5</option>
+                <option value=4 >4</option>              
+              </select>
+            </div>
           </div>
+          <h4 class="my-4">
+            Second Official Language
+            <span id="cLangChange1"></span>
+          </h4>
+          <div class="row g-3">
+            <div class="col-md-3">
+              <label for="cSpeaking2" class="form-label">Speaking</label>
+              <input type="number" name="cSpeaking2" class="form-control" id="cSpeaking2" value=0 placeholder="Enter a number" required>
+            </div>
+            <div class="col-md-3">
+              <label for="cListening2" class="form-label">Listening</label>
+              <input type="number" name="cListening2" class="form-control" id="cListening2" value=0 placeholder="Enter a number" required>
+            </div>
+            <div class="col-md-3">
+              <label for="cReading2" class="form-label">Reading</label>
+              <input type="number" name="cReading2" class="form-control" id="cReading2" value=0 placeholder="Enter a number" required>
+            </div>
+            <div class="col-md-3">
+              <label for="cWriting2" class="form-label">Writing</label>
+              <input type="number" name="cWriting2" class="form-control" id="cWriting2" value=0 placeholder="Enter a number" required>
+            </div>
+          </div>
+        </div>
 
-          <div class="col-md-3">
-            <label for="cWriting2" class="form-label">Writing</label>
-            <select class="form-select" id="cWriting2" name="cWriting2" required>
+        <div id="ifFr" style="display: none">
+          <div class="row g-3">
+            <div class="col-md-3">
+              <label for="cSpeaking3" class="form-label">Speaking</label>
+              <input type="number" name="cSpeaking3" class="form-control" id="cSpeaking3" value=0 placeholder="Enter a number" required>
+            </div>
+            <div class="col-md-3">
+              <label for="cListening3" class="form-label">Listening</label>
+              <input type="number" name="cListening3" class="form-control" id="cListening3" value=0 placeholder="Enter a number" required>
+            </div>
+            <div class="col-md-3">
+              <label for="cReading3" class="form-label">Reading</label>
+              <input type="number" name="cReading3" class="form-control" id="cReading3" value=0 placeholder="Enter a number" required>
+            </div>
+            <div class="col-md-3">
+              <label for="cWriting3" class="form-label">Writing</label>
+              <input type="number" name="cWriting3" class="form-control" id="cWriting3" value=0 placeholder="Enter a number" required>
+            </div>
+          </div>
+          <h4 class="my-4">
+            Second Official Language
+            <span id="cLangChange2"></span>
+          </h4>
+          <div class="row g-3">
+            <div class="col-md-3">
+              <label for="cSpeaking4" class="form-label">Speaking</label>
+              <select class="form-select" id="cSpeaking4" name="cSpeaking4" required>
                 <option value="0">Choose...</option>
                 <option value=10>10</option>
                 <option value=9 >9</option>
@@ -235,11 +232,52 @@
                 <option value=7 >7</option>
                 <option value=6 >6</option>
                 <option value=5 >5</option>
-                <option value=4 >4</option>         
-            </select>
+                <option value=4 >4</option>       
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label for="cListening4" class="form-label">Listening</label>
+                <select class="form-select" id="cListening4" name="cListening4" required>
+                  <option value="0">Choose...</option>
+                  <option value=10>10</option>
+                  <option value=9 >9</option>
+                  <option value=8 >8</option>
+                  <option value=7 >7</option>
+                  <option value=6 >6</option>
+                  <option value=5 >5</option>
+                  <option value=4 >4</option>           
+              </select>
+            </div> 
+            <div class="col-md-3">
+              <label for="cReading4" class="form-label">Reading</label>
+              <select class="form-select" id="cReading4" name="cReading4" required>
+                <option value="0">Choose...</option>
+                <option value=10>10</option>
+                <option value=9 >9</option>
+                <option value=8 >8</option>
+                <option value=7 >7</option>
+                <option value=6 >6</option>
+                <option value=5 >5</option>
+                <option value=4 >4</option>           
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label for="cWriting4" class="form-label">Writing</label>
+              <select class="form-select" id="cWriting4" name="cWriting4" required>
+                <option value="0">Choose...</option>
+                <option value=10>10</option>
+                <option value=9 >9</option>
+                <option value=8 >8</option>
+                <option value=7 >7</option>
+                <option value=6 >6</option>
+                <option value=5 >5</option>
+                <option value=4 >4</option>              
+              </select>
+            </div>
           </div>
         </div>
       </div>
+
 
       <div id="ieltsSwitch" style="display: none">
         <h4>
@@ -473,29 +511,26 @@
           Second Official Language
           <span id="tLangChange"></span>
         </h4>
-        <div class="row g-3">
 
+        <div class="row g-3">
           <div class="col-md-3">
             <label for="tSpeaking2" class="form-label">Speaking</label>
             <input type="number" name="tSpeaking2" class="form-control" id="tSpeaking2" value=0 placeholder="Enter a number" required>
           </div>
-
           <div class="col-md-3">
             <label for="tListening2" class="form-label">Listening</label>
             <input type="number" name="tListening2" class="form-control" id="tListening2" value=0 placeholder="Enter a number" required>
           </div>
-
           <div class="col-md-3">
             <label for="tReading2" class="form-label">Reading</label>
             <input type="number" name="tReading2" class="form-control" id="tReading2" value=0 placeholder="Enter a number" required>
           </div>
-
           <div class="col-md-3">
             <label for="tWriting2" class="form-label">Writing</label>
             <input type="number" name="tWriting2" class="form-control" id="tWriting2" value=0 placeholder="Enter a number" required>
           </div>
-
         </div>
+
       </div>
 
       <hr class="my-4">
@@ -563,50 +598,62 @@
 
 </div>
 <script>
-    function examFormat(){
-      var examstyle = document.myForm.examstyle.value;
-      var celpipSwitch = document.getElementById("celpipSwitch");
-      var ieltsSwitch = document.getElementById("ieltsSwitch");     
+  function examFormat(){
+    var examstyle = document.myForm.examstyle.value;
+    var celpipSwitch = document.getElementById("celpipSwitch");
+    var ieltsSwitch = document.getElementById("ieltsSwitch");     
 
-      if(examstyle == "celpip"){
-        console.log("CELPIP");
-        celpipSwitch.style.display = "block";
-        ieltsSwitch.style.display = "none";
-      }else if(examstyle == "ielts"){ 
-        console.log("IELTS");
-        celpipSwitch.style.display = "none";
-        ieltsSwitch.style.display = "block";
-      }else{
-        celpipSwitch.style.display = "none";
-        ieltsSwitch.style.display = "none";
-      }
+    if(examstyle == "celpip"){
+      console.log("CELPIP");
+      celpipSwitch.style.display = "block";
+      ieltsSwitch.style.display = "none";
+    }else if(examstyle == "ielts"){ 
+      console.log("IELTS");
+      celpipSwitch.style.display = "none";
+      ieltsSwitch.style.display = "block";
+    }else{
+      celpipSwitch.style.display = "none";
+      ieltsSwitch.style.display = "none";
     }
+  }
 
-    function show1(){
-        var cF= document.myForm.cFirstLang.value;
-        console.log(cF);
-        var cS = document.getElementById("cLangChange");
-        if(cF == "eng"){
-          cS.innerHTML = "(French)";
-        }else if (cF == "fr"){
-          cS.innerHTML = "(English)";
-        }else{
-          cS.innerHTML = "";
-        }
-    }
+  function show1(){
+    var cF= document.myForm.cFirstLang.value;
+    console.log("CELPIP");
+    var ifEn = document.getElementById("ifEn");
+    var celpipFr = document.getElementById("ifFr");
+    var cS1 = document.getElementById("cLangChange1");
+    var cS2 = document.getElementById("cLangChange2");
 
-    function show2(){
-        var iF= document.myForm.iFirstLang.value;
-        console.log(iF);
-        var iS = document.getElementById("iLangChange");
-        if(iF == "eng"){
-          iS.innerHTML = "(French)";
-        }else if (iF == "fr"){
-          iS.innerHTML = "(English)";
-        }else{
-          iS.innerHTML = "";
-        }
+    if(cF == "eng"){
+      console.log("I am in English");
+      ifEn.style.display = "block";
+      celpipFr.style.display = "none";
+      cS1.innerHTML = "(French)";
+    }else if(cF == "fr"){ 
+      ifEn.style.display = "none";
+      celpipFr.style.display = "block";
+      cS2.innerHTML = "(English)";
+    }else{
+      ifEn.style.display = "none";
+      celpipFr.style.display = "none";
+      cS1.innerHTML = "";
+      cS2.innerHTML = "";
     }
+  }
+
+  function show2(){
+    var iF= document.myForm.iFirstLang.value;
+    console.log(iF);
+    var iS = document.getElementById("iLangChange");
+    if(iF == "eng"){
+      iS.innerHTML = "(French)";
+    }else if (iF == "fr"){
+      iS.innerHTML = "(English)";
+    }else{
+      iS.innerHTML = "";
+    }
+  }
 
 // Adaptability section
     function spouseRelatedInfo(){
