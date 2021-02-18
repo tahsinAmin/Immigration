@@ -44,40 +44,67 @@ class DreamcController extends Controller{
         $a = ($value < 47)? $age[$value] :0;
 
         $examstyle = request('examstyle');
+        $langStyle = request('cFirstLang');
         $clb = 0;
         if($examstyle == "celpip"){
-            $speaking = request('cSpeaking1');
-            $listening = request('cListening1');
-            $reading = request('cReading1');
-            $writing = request('cWriting1');
+            if($langStyle == "en"){
+                $speaking  = request('cSpeaking1');
+                $listening = request('cListening1');
+                $reading   = request('cReading1');
+                $writing   = request('cWriting1');
 
-            if($speaking>=9.0 &&  $listening>=9.0 && $reading>=9.0 && $writing>=9.0){
-                $clb = 24;
-            } else if($speaking==8.0 &&  $listening==8.0 && $reading==8.0 && $writing==8.0){
-                $clb = 20;
-            } else if($speaking==7.0 &&  $listening==7.0 && $reading==7.0 && $writing==7.0){
-                $clb = 16;
-            } else if($speaking==6.0 &&  $listening==6.0 && $reading==6.0 && $writing==6.0){
+                if($speaking>=9.0 &&  $listening>=9.0 && $reading>=9.0 && $writing>=9.0){
+                    $clb = 24;
+                } else if($speaking==8.0 &&  $listening==8.0 && $reading==8.0 && $writing==8.0){
+                    $clb = 20;
+                } else if($speaking==7.0 &&  $listening==7.0 && $reading==7.0 && $writing==7.0){
+                    $clb = 16;
+                } else if($speaking==6.0 &&  $listening==6.0 && $reading==6.0 && $writing==6.0){
 
-            } else if($speaking==5.0 &&  $listening==5.0 && $reading==5.0 && $writing==5.0){
+                } else if($speaking==5.0 &&  $listening==5.0 && $reading==5.0 && $writing==5.0){
 
-            } else {
-                error_log("Not eligible to apply");
-            }
+                } else {
+                    error_log("Not eligible to apply");
+                }
 
-            $speaking = request('cSpeaking2');
-            $listening = request('cListening2');
-            $reading = request('cReading2');
-            $writing = request('cWriting2');
-            $clb2 = 4;
-            if($speaking>=5.0 &&  $listening>=5.0 && $reading>=5.0 && $writing>=5.0){
-
-            } else{
+                $speaking = request('cSpeaking2');
+                $listening = request('cListening2');
+                $reading = request('cReading2');
+                $writing = request('cWriting2');
                 $clb2 = 0;
-            }
+                if($speaking>=226 && $writing>=226 && $listening>=181 && $reading>=151){ $clb2 = 4; }
+    
+                $clb+=$clb2;
 
-            $clb+=$clb2;
-            
+            }
+            else if($langStyle == "fr"){
+                $speaking  = request('cSpeaking3');
+                $listening = request('cListening3');
+                $reading   = request('cReading3');
+                $writing   = request('cWriting3');
+
+                if($speaking>=371 && $speaking<=392 && $writing>=371 && $writing<=392 && $listening>=298 && $listening<=315 && $reading>=248 && $reading<=262){
+                    $clb = 24;
+                } else if($speaking>=349 && $speaking<=370 && $writing>=349 && $writing<=370 && $listening>=280 && $listening<=297 && $reading>=233 && $reading<=247){
+                    $clb = 20;
+                } else if($speaking>=310 && $speaking<=348 && $writing>=310 && $writing<=348 && $listening>=249 && $listening<=279 && $reading>=207 && $reading<=232){
+                    $clb = 16;
+                } else if($speaking>=271 && $speaking<=309 && $writing>=271 && $writing<=309 && $listening>=217 && $listening<=248 && $reading>=181 && $reading<=206){
+    
+                } else if($speaking>=226 && $speaking<=270 && $writing>=226 && $writing<=270 && $listening>=181 && $listening<=216 && $reading>=151 && $reading<=180){
+    
+                } else{
+                    error_log("Not eligible to apply");
+                }
+
+                $speaking = request('cSpeaking4');
+                $listening = request('cListening4');
+                $reading = request('cReading4');
+                $writing = request('cWriting4');
+                $clb2 = 0;
+                if($speaking>=5.0 &&  $listening>=5.0 && $reading>=5.0 && $writing>=5.0){ $clb2 = 4; }
+                $clb+=$clb2;
+            }            
         }else if($examstyle == "ielts"){
             $speaking = request('iSpeaking1');
             $listening = request('iListening1');
@@ -117,43 +144,6 @@ class DreamcController extends Controller{
                 $clb2 = 0;
             }
             $clb+=$clb2;       
-        }else if($examstyle == "tef"){
-            $speaking = request('tSpeaking1');
-            $listening = request('tListening1');
-            $reading = request('tReading1');
-            $writing = request('tWriting1');
-            error_log($speaking);
-            error_log($listening);
-            error_log($reading);
-            error_log($writing);
-
-            if($speaking>=371 && $speaking<=392 && $writing>=371 && $writing<=392 && $listening>=298 && $listening<=315 && $reading>=248 && $reading<=262){
-                $clb = 24;
-            } else if($speaking>=349 && $speaking<=370 && $writing>=349 && $writing<=370 && $listening>=280 && $listening<=297 && $reading>=233 && $reading<=247){
-                $clb = 20;
-            } else if($speaking>=310 && $speaking<=348 && $writing>=310 && $writing<=348 && $listening>=249 && $listening<=279 && $reading>=207 && $reading<=232){
-                $clb = 16;
-            } else if($speaking>=271 && $speaking<=309 && $writing>=271 && $writing<=309 && $listening>=217 && $listening<=248 && $reading>=181 && $reading<=206){
-
-            } else if($speaking>=226 && $speaking<=270 && $writing>=226 && $writing<=270 && $listening>=181 && $listening<=216 && $reading>=151 && $reading<=180){
-
-            } else{
-                error_log("Not eligible to apply");
-            }
-
-            $speaking = request('tSpeaking2');
-            $listening = request('tListening2');
-            $reading = request('tReading2');
-            $writing = request('tWriting2');
-            $clb2 = 0;
-            if($speaking>=226 && $writing>=226 && $listening>=181 && $reading>=151){ $clb2 = 4; }
-
-            $clb+=$clb2;
-            
-            error_log($speaking);
-            error_log($listening);
-            error_log($reading);
-            error_log($writing);
         }
 
         // $ckb = request('ckb');

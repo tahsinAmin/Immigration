@@ -107,18 +107,13 @@
       </h4>
 
       <div id="celpipSwitch" style="display: none">
-        <h4>
-          First Official Language
+        <h4>First Official Language
           <select class="form-select" id="cFirstLang" name="cFirstLang" onchange="show1();" required>
               <option value="n">Choose...</option>
               <option value="eng">English</option>
               <option value="fr">French</option>
           </select>
         </h4>
-
-
-
-
         <div id="ifEn" style="display: none">
           <div class="row g-3">
             <div class="col-md-3">
@@ -535,8 +530,7 @@
 
       <hr class="my-4">
 
-      <div class="form-group mt-4">
-        <h4>Adaptability</h4>
+      <div class="form-group mt-4"><h4>Adaptability</h4>
         <input id="married" onclick="spouseRelatedInfo();" type=checkbox>
         <label class="form-check-label" for="married">
           Are you married?
@@ -589,6 +583,14 @@
       </div>
 
       <hr class="my-4">
+
+      <div class="form-group mt-4"><h4>Arranged employment in Canada</h4>
+        <input id="married" onclick="arrangedEmploymentInfo();" type=checkbox data-toggle="tooltip" data-placement="top" title="You must get the job offer before you apply to come to Canada as a Federal Skilled Worker.">
+        <label class="form-check-label" for="employed">
+        you have a job offer of at least 1 year from a Canadian employer.
+        </label>
+        <input type="hidden" id="sumAdaptability2" name="sumAdaptability2" value="" />
+      </div>
 
       <input type="submit" name="submit" class="btn btn-primary mt-2" > 
 
