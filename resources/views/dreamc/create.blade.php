@@ -21,7 +21,7 @@
     @endif
   </div>
 
-  <form action="{{ route('dreamc.index') }}" name="myForm" class="container" method="POST">
+  <form action="{{ route('dreamc.index') }}" name="myForm" class="container col-lg-6" method="POST">
     @csrf
       <legend>Form Assessment</legend>
       <div class="form-group">
@@ -530,8 +530,7 @@
 
       <hr class="my-4">
 
-      <div class="form-group mt-4"><h4>Adaptability</h4>
-        <input id="married" onclick="spouseRelatedInfo();" type=checkbox>
+      <div class="form-group mt-4"><h4>Adaptability</h4><input id="married" onclick="spouseRelatedInfo();" type=checkbox>
         <label class="form-check-label" for="married">
           Are you married?
         </label>
@@ -583,111 +582,21 @@
       </div>
 
       <hr class="my-4">
-
       <div class="form-group mt-4"><h4>Arranged employment in Canada</h4>
-        <input id="married" onclick="arrangedEmploymentInfo();" type=checkbox data-toggle="tooltip" data-placement="top" title="You must get the job offer before you apply to come to Canada as a Federal Skilled Worker.">
+
+      <input id="arrangedEmployment" onclick="arrangedEmploymentInfo();"
+       type=checkbox data-toggle="tooltip" data-placement="top"
+       title="You must get the job offer before you apply to come to Canada as a Federal Skilled Worker."
+       value=10 onclick='chkcontrol2()';>
+
         <label class="form-check-label" for="employed">
         you have a job offer of at least 1 year from a Canadian employer.
         </label>
-        <input type="hidden" id="sumAdaptability2" name="sumAdaptability2" value="" />
+        <input type="hidden" id="sumArrangedEmployment" name="sumArrangedEmployment" value="" />
       </div>
-
       <input type="submit" name="submit" class="btn btn-primary mt-2" > 
-
-
-
   </form>
-
 </div>
-<script>
-  function examFormat(){
-    var examstyle = document.myForm.examstyle.value;
-    var celpipSwitch = document.getElementById("celpipSwitch");
-    var ieltsSwitch = document.getElementById("ieltsSwitch");     
 
-    if(examstyle == "celpip"){
-      console.log("CELPIP");
-      celpipSwitch.style.display = "block";
-      ieltsSwitch.style.display = "none";
-    }else if(examstyle == "ielts"){ 
-      console.log("IELTS");
-      celpipSwitch.style.display = "none";
-      ieltsSwitch.style.display = "block";
-    }else{
-      celpipSwitch.style.display = "none";
-      ieltsSwitch.style.display = "none";
-    }
-  }
-
-  function show1(){
-    var cF= document.myForm.cFirstLang.value;
-    console.log("CELPIP");
-    var ifEn = document.getElementById("ifEn");
-    var celpipFr = document.getElementById("ifFr");
-    var cS1 = document.getElementById("cLangChange1");
-    var cS2 = document.getElementById("cLangChange2");
-
-    if(cF == "eng"){
-      console.log("I am in English");
-      ifEn.style.display = "block";
-      celpipFr.style.display = "none";
-      cS1.innerHTML = "(French)";
-    }else if(cF == "fr"){ 
-      ifEn.style.display = "none";
-      celpipFr.style.display = "block";
-      cS2.innerHTML = "(English)";
-    }else{
-      ifEn.style.display = "none";
-      celpipFr.style.display = "none";
-      cS1.innerHTML = "";
-      cS2.innerHTML = "";
-    }
-  }
-
-  function show2(){
-    var iF= document.myForm.iFirstLang.value;
-    console.log(iF);
-    var iS = document.getElementById("iLangChange");
-    if(iF == "eng"){
-      iS.innerHTML = "(French)";
-    }else if (iF == "fr"){
-      iS.innerHTML = "(English)";
-    }else{
-      iS.innerHTML = "";
-    }
-  }
-
-// Adaptability section
-    function spouseRelatedInfo(){
-      console.log("Hello");
-      var spouseRelated =  document.getElementById("spouseRelated");
-      spouseRelated.style.display = (spouseRelated.style.display == "none") ? "block": "none";
-    }
-
-    function chkcontrol(j) {
-      var sum=0;
-      for(var i=1; i <= 7; i++){
-      var checkInput = document.getElementById("check-"+i);
-        if(checkInput.checked){
-          sum = sum + parseInt(checkInput.value);
-        }
-        
-        if(sum >10){
-          sum = sum - parseInt(checkInput.value);
-          checkInput.checked = true;
-          for(var i=1; i <=7; i++){
-            document.getElementById("check-"+i).disabled= true;
-          }
-          document.getElementById("married").disabled= true;
-
-          alert("It seems you have reached the maximum points in the Adaptibility Section") 
-        }
-      }
-      document.getElementById("sumAdaptability").value = sum;
-      console.log(document.getElementById("sumAdaptability").value);
-    }
-
-
-</script>
 
 @endsection
