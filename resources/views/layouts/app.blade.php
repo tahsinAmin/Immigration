@@ -157,10 +157,8 @@
       if(checkInput.checked){
         sum = sum + parseInt(checkInput.value);
       }
-      
-      if(sum >10){
-        sum = sum - parseInt(checkInput.value);
-        checkInput.checked = true;
+
+      if(sum == 10){
         for(var i=1; i <=7; i++){
           document.getElementById("check-"+i).disabled= true;
         }
