@@ -155,12 +155,18 @@ class DreamcController extends Controller{
         $sumAdaptability = request('sumAdaptability');
         error_log($sumAdaptability);
 
-        $total = $a + $clb + request('workexp') + request('education') + $sumAdaptability;
+        // // Work remains
+        // $frstL = request('firstlang');
+        // $secondL = ($frstL == "eng") ? "fr" : "eng";
+        // error_log($secondL);
 
-        // Work remains
-        $frstL = request('firstlang');
-        $secondL = ($frstL == "eng") ? "fr" : "eng";
-        error_log($secondL);
+        $arrangedEmployment = 0;
+        if(request('arrangedEmployment')){
+            $arrangedEmployment = 10;
+        }
+        error_log($arrangedEmployment);
+
+        $total = $a + $clb + request('workexp') + request('education') + $sumAdaptability + $arrangedEmployment;
 
         $email_data = array(
             'name' => request('name'),
@@ -169,6 +175,7 @@ class DreamcController extends Controller{
             'education' => request('education'),
             'clb' => $clb,
             'adapt' => $sumAdaptability,
+            'arranged' => $arrangedEmployment,
             'total' => $total
         );
 

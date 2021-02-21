@@ -584,15 +584,14 @@
       <hr class="my-4">
       <div class="form-group mt-4"><h4>Arranged employment in Canada</h4>
 
-      <input id="arrangedEmployment" onclick="arrangedEmploymentInfo();"
+      <input id="arrangedEmployment" name = "arrangedEmployment"
        type=checkbox data-toggle="tooltip" data-placement="top"
        title="You must get the job offer before you apply to come to Canada as a Federal Skilled Worker."
-       value=10 onclick='chkcontrol2()';>
+       value=10>
 
-        <label class="form-check-label" for="employed">
+        <label class="form-check-label" for="arrangedEmployment">
         you have a job offer of at least 1 year from a Canadian employer.
         </label>
-        <input type="hidden" id="sumArrangedEmployment" name="sumArrangedEmployment" value="" />
       </div>
       <input type="submit" name="submit" class="btn btn-primary mt-2" > 
   </form>

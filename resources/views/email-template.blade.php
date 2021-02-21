@@ -71,7 +71,7 @@
   <tr>
       <td><b>Job in Canada</b></td>
       <td>10</td>
-      <td>80</td>
+      <td>{{ $emails['arranged'] }}</td>
   </tr>
   <tr>
       <td><b>Adaptability</b></td>
