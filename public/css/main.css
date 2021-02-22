@@ -141,7 +141,48 @@ footer{
   padding-left: 2.8rem;
 }
 
-                  
+/* footer section */
+
+footer {
+  background:#efeef2;
+}
+
+.footer-social-icons {
+  width: 350px;
+  display:block;
+  margin: 0 auto;
+}
+
+._14 {
+  font-size: 1.4em;
+  margin:  1% 0 1% 0;
+}
+
+.social-icons li {
+  vertical-align: top;
+  display: inline;
+  height: 100px;
+}
+.social-icons a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.fab, .fas{
+  padding:10px 14px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: .5s;
+  background-color: transparent;
+}
+
+.fa-facebook:hover  { color: #fff; background-color: #3d5b99; }
+.fa-twitter:hover   { color: #fff; background-color: #00aced; }
+.fa-youtube:hover   { color: #fff; background-color: #e64a41; }
+
+
 
 @media screen and (max-width: 768px) {
   .assess-section h1{

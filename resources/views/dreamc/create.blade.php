@@ -23,7 +23,7 @@
 
   <form action="{{ route('dreamc.index') }}" name="myForm" class="container col-lg-6" method="POST">
     @csrf
-      <legend>Form Assessment</legend>
+      <legend class="text-center py-4">Form Assessment</legend>
       <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
         <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
@@ -568,12 +568,12 @@
           </div>
         <div class="form-check">          
           <input  class="form-check-input" type=checkbox id="check-6" name="ckb[]" value=5 onclick='chkcontrol(6)';>
-        <label class="form-check-label">
-          Arranged employment in Canada
-        </label>
-          </div>
+          <label class="form-check-label">
+            Arranged employment in Canada
+          </label>
+        </div>
         <div class="form-check">   
-          <input  class="form-check-input" type=checkbox id="check-7" name="ckb[]" value=5 onclick='chkcontrol(7)';
+          <input  class="form-check-input" type=checkbox id="check-7" name="ckb[]" value=5 onclick='chkcontrol(7)';>
           <label class="form-check-label">
             Relatives in Canada
           </label>

@@ -8,7 +8,6 @@
  curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 
  $result = curl_exec($curl);
- 
 
  $sections = array();
 
@@ -394,5 +393,15 @@
 
     </div>
   </main>
+  <footer>
+    <div class="footer-social-icons">
+      <h4 class="_14">Follow us on</h4>
+      <ul class="social-icons">
+          <li><a href="" class="social-icon"> <i class="fab fa-facebook"></i></a></li>
+          <li><a href="" class="social-icon"> <i class="fab fa-twitter"></i></a></li>
+          <li><a href="" class="social-icon"> <i class="fab fa-youtube"></i></a></li>
+      </ul>
+    </div>
+  </footer>
 @endsection
 
