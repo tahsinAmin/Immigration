@@ -394,13 +394,36 @@
     </div>
   </main>
   <footer>
-    <div class="footer-social-icons">
-      <h4 class="_14">Follow us on</h4>
-      <ul class="social-icons">
-          <li><a href="" class="social-icon"> <i class="fab fa-facebook"></i></a></li>
-          <li><a href="" class="social-icon"> <i class="fab fa-twitter"></i></a></li>
-          <li><a href="" class="social-icon"> <i class="fab fa-youtube"></i></a></li>
-      </ul>
+
+    <div class="row container m-auto py-4">
+      <div class="col-lg-5 col-sm-12">
+        <a class="blog-header-logo text-dark" href="#">DreamC</a>
+        <div class="footer-social-icons">
+          <ul class="social-icons">
+              <li><a href="" class="social-icon"> <i class="fab fa-facebook"></i></a></li>
+              <li><a href="" class="social-icon"> <i class="fab fa-twitter"></i></a></li>
+              <li><a href="" class="social-icon"> <i class="fab fa-youtube"></i></a></li>
+          </ul>
+        </div>
+        <p>© 2021 Created By DC. All Rights Reserved.</p>
+      </div>
+      <div class="offset-lg-2 col-lg-5 col-sm-12">
+        <h3>Our Newsletter</h3>
+        <p>Enter Your Email to get our news and updates.</p>
+        <div class="row">
+          <div class="col-md-8 col-sm-12">
+            <input type="email" placeholder="Enter Your Email" style="width: 100%; border-radius: 99em;border-style: none;padding: .375rem .75rem;">
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <button class="btn btn-danger border border-danger" style="
+                border-radius: 99em;
+                width: 100%;
+            ">Submit</button>
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
     </div>
   </footer>
 @endsection
